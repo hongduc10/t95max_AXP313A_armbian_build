@@ -30,6 +30,7 @@ else
         RELEASE=trixie \
         BUILD_MINIMAL=yes \
         BUILD_DESKTOP=no \
+        NETWORKING_STACK=network-manager \
         KERNEL_CONFIGURE=no \
         ENABLE_EXTENSIONS=ccache \
         COMPRESS_OUTPUTIMAGE=sha,xz
