@@ -123,8 +123,22 @@ The output image will be in `~/armbian-h618/output/images/` (decompress `.img.xz
    ```
    NetworkManager stores the profile in `/etc/NetworkManager/system-connections/` and automatically reconnects on every boot.
 
-3. **Install FD655 LED Driver (`openvfd`):**
-   The `openvfd` node is enabled in the Device Tree (`/proc/device-tree/openvfd`), while `openvfd.ko` is an out-of-tree module. Once booted on the new kernel (with `linux-headers` installed), clone `H616-T95-open-vfd` / `linux_openvfd` on the box, run `make && make modules_install`, and start `OpenVFDService` configured for pins `PI5`/`PI10`.
+3. **Install FD655 LED Driver (`openvfd`) via SSH (while running on MicroSD):**
+   The `openvfd` node is enabled in the Device Tree (`/proc/device-tree/openvfd`), while `openvfd.ko` is built separately via [build_openvfd.sh](file:///d:/T95/t95max-audit-20261112-210427/build_openvfd.sh) in WSL2 (reusing the built kernel tree, with or without Docker):
+   ```bash
+   # On PC (WSL2) after Armbian build finishes:
+   bash /mnt/d/T95/t95max-audit-20261112-210427/build_openvfd.sh
+   ```
+   Copy the bundle to the T95 Max (booted from MicroSD) and install over SSH:
+   ```bash
+   scp ~/armbian-h618/output/openvfd/openvfd-t95max-arm64.tar.gz root@<BOX-IP>:/tmp/
+   ssh root@<BOX-IP> "mkdir -p /tmp/openvfd && tar -xzf /tmp/openvfd-t95max-arm64.tar.gz -C /tmp/openvfd && bash /tmp/openvfd/install.sh && rm -rf /tmp/openvfd /tmp/openvfd-t95max-arm64.tar.gz"
+   ```
+   Verify on the box over SSH:
+   ```bash
+   ssh root@<BOX-IP> "lsmod | grep openvfd && systemctl status openvfd.service --no-pager"
+   ```
+   *(Configured for `PI5`=`261` / `PI10`=`266` in `/opt/H616-T95-open-vfd/vfd.conf`. If the display is blank or garbled, swap `261` and `266` in `vfd.conf` and run `systemctl restart openvfd.service`.)*
 
 ---
 
@@ -154,8 +168,8 @@ docker system prune -f
 > - Root `/` (`29.7G` or your SD card size): MicroSD card currently booting.
 > - **`/dev/mmcblk2`** (`7.3G`, chip `008GE0`): Internal 8 GB eMMC.
 
-Steps on the running box (booted from MicroSD):
-1. Run:
+### Method A: Clone Current MicroSD System (`armbian-install`)
+1. Run over SSH on the running box (booted from MicroSD):
    ```bash
    sudo armbian-install
    ```
@@ -163,3 +177,20 @@ Steps on the running box (booted from MicroSD):
 3. Select the eMMC target device **`/dev/mmcblk2`** (`7.3G`).
 4. Select **`ext4`** as the filesystem.
 5. Once finished, run `poweroff`, **remove the MicroSD card**, and power on the box to boot directly from internal eMMC.
+
+### Method B: Flash Built `.img.xz` Directly via SSH (from MicroSD)
+If you built a new `.img.xz` on your PC (WSL2) and want to write it directly to eMMC over SSH without wearing/reflashing the MicroSD card:
+1. Verify block devices on the box so you don't overwrite the running MicroSD card:
+   ```bash
+   ssh root@<BOX-IP> "lsblk"
+   ```
+   Confirm `/dev/mmcblk2` (`~7.3G`) is the internal eMMC and is **not** mounted as `/`.
+2. Stream the `.img.xz` from WSL2 directly to `/dev/mmcblk2` over SSH:
+   ```bash
+   xzcat ~/armbian-h618/output/images/Armbian_*T95zPlus-h618*.img.xz | \
+     ssh root@<BOX-IP> "dd of=/dev/mmcblk2 bs=4M status=progress conv=fsync && sync"
+   ```
+3. Power off, **remove the MicroSD card**, and power on to boot the fresh image from eMMC:
+   ```bash
+   ssh root@<BOX-IP> "poweroff"
+   ```
