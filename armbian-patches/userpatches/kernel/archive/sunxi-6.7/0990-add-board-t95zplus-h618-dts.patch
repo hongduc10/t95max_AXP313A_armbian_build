@@ -2,7 +2,7 @@ diff --git a/arch/arm64/boot/dts/allwinner/T95zPlus-H618.dts b/arch/arm64/boot/d
 new file mode 100644
 --- /dev/null
 +++ b/arch/arm64/boot/dts/allwinner/T95zPlus-H618.dts
-@@ -0,0 +1,316 @@
+@@ -0,0 +1,366 @@
 +// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
 +/*
 + * Copyright (C) 2023 Arm Ltd.
@@ -67,6 +67,15 @@ new file mode 100644
 +                pinctrl-names = "default";
 +                reset-gpios = <&pio 6 18 GPIO_ACTIVE_LOW>; /* PG18 */
 +        };
++
++	ac300_pwm_clk: ac300-clk {
++		compatible = "pwm-clock";
++		#clock-cells = <0>;
++		/* 500ns period -> 2MHz */
++		pwms = <&pwm 5 500 0>;
++		clock-frequency = <2000000>;
++		status = "okay";
++	};
 +
 +    rfkill {
 +            compatible = "allwinner,sunxi-rfkill";
@@ -171,21 +180,45 @@ new file mode 100644
 +};
 +
 +&emac1 {
++	compatible = "allwinner,sun50i-h616-internal-emac";
 +	pinctrl-names = "default";
 +	pinctrl-0 = <&rmii_pins>;
 +	phy-mode = "rmii";
-+	phy-handle = <&rmii_phy>;
-+	phy-supply = <&reg_aldo1>;
++	phy-handle = <&ac300_ephy>;
++	phy-supply = <&reg_dldo1>;
 +	allwinner,rx-delay-ps = <3100>;
 +	allwinner,tx-delay-ps = <700>;
 +	status = "okay";
++
++	mdio-mux {
++		compatible = "allwinner,sun8i-h3-mdio-mux";
++		#address-cells = <1>;
++		#size-cells = <0>;
++		mdio-parent-bus = <&mdio1>;
++
++		internal_mdio: mdio@1 {
++			compatible = "allwinner,sun8i-h3-mdio-internal";
++			reg = <1>;
++			#address-cells = <1>;
++			#size-cells = <0>;
++
++			ac300_ephy: ethernet-phy@0 {
++				compatible = "ethernet-phy-id0044.1400",
++					     "allwinner,sun50i-h618-ac300-ephy",
++					     "ethernet-phy-ieee802.3-c22";
++				reg = <0>;
++				clocks = <&ccu CLK_EMAC_25M>, <&ac300_pwm_clk>;
++				clock-names = "ephy", "pwm";
++				nvmem-cells = <&ephy_calibration>;
++				nvmem-cell-names = "calibration";
++				status = "okay";
++			};
++		};
++	};
 +};
 +
 +&mdio1 {
-+	rmii_phy: ethernet-phy@0 {
-+		compatible = "ethernet-phy-ieee802.3-c22";
-+		reg = <0>;
-+	};
++	compatible = "snps,dwmac-mdio";
 +};
 +
 +&mmc0 {
@@ -309,6 +342,23 @@ new file mode 100644
 +	pinctrl-0 = <&uart1_pins>, <&uart1_rts_cts_pins>;
 +	uart-has-rtscts;
 +	status = "okay";
++};
++
++&pwm {
++	status = "okay";
++};
++
++&pwm5 {
++	pinctrl-names = "default";
++	pinctrl-0 = <&pwm5_pin>;
++	clk_bypass_output = <0x1>;
++	status = "okay";
++};
++
++&sid {
++	ephy_calibration: ephy-calibration@2c {
++		reg = <0x2c 0x2>;
++	};
 +};
 +
 +&usbotg {
