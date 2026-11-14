@@ -13,33 +13,43 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")" && pwd)"
 PATCHES_DIR="${SCRIPT_DIR}/armbian-patches"
 TARGET_DIR="${HOME}/armbian-h618"
+SYNC_ONLY=0
 
-echo "=========================================================="
-echo " [1/4] Checking and installing Docker & required tools"
-echo "=========================================================="
-if ! command -v docker >/dev/null 2>&1; then
-    echo "[+] Installing docker.io, git, and curl..."
-    sudo apt-get update
-    sudo apt-get install -y docker.io git curl
-    sudo usermod -aG docker "${USER}"
-    echo "[+] Added user ${USER} to the docker group."
-else
-    echo "[+] Docker is already installed."
+if [ "${1:-}" = "--sync" ] || [ "${1:-}" = "-s" ]; then
+    SYNC_ONLY=1
 fi
 
-if ! docker ps >/dev/null 2>&1; then
-    echo "[+] Starting Docker service..."
-    sudo service docker start || true
-fi
+if [ "${SYNC_ONLY}" -eq 0 ]; then
+    echo "=========================================================="
+    echo " [1/4] Checking and installing Docker & required tools"
+    echo "=========================================================="
+    if ! command -v docker >/dev/null 2>&1; then
+        echo "[+] Installing docker.io, git, and curl..."
+        sudo apt-get update
+        sudo apt-get install -y docker.io git curl
+        sudo usermod -aG docker "${USER}"
+        echo "[+] Added user ${USER} to the docker group."
+    else
+        echo "[+] Docker is already installed."
+    fi
 
-echo "=========================================================="
-echo " [2/4] Cloning official Armbian Build Framework (armbian/build)"
-echo "=========================================================="
-if [ -d "${TARGET_DIR}" ]; then
-    echo "[+] Directory ${TARGET_DIR} already exists, skipping clone."
-else
-    echo "[+] Cloning https://github.com/armbian/build.git into ${TARGET_DIR}..."
-    git clone --depth=1 https://github.com/armbian/build.git "${TARGET_DIR}"
+    if ! docker ps >/dev/null 2>&1; then
+        echo "[+] Starting Docker service..."
+        sudo service docker start || true
+    fi
+
+    echo "=========================================================="
+    echo " [2/4] Cloning official Armbian Build Framework (armbian/build)"
+    echo "=========================================================="
+    if [ -d "${TARGET_DIR}" ]; then
+        echo "[+] Directory ${TARGET_DIR} already exists, skipping clone."
+    else
+        echo "[+] Cloning https://github.com/armbian/build.git into ${TARGET_DIR}..."
+        git clone --depth=1 https://github.com/armbian/build.git "${TARGET_DIR}"
+    fi
+elif [ ! -d "${TARGET_DIR}" ]; then
+    echo "[!] ${TARGET_DIR} does not exist yet. Run without --sync first."
+    exit 1
 fi
 
 echo "=========================================================="
@@ -51,6 +61,7 @@ if [ ! -d "${PATCHES_DIR}" ]; then
 fi
 
 cp -r "${PATCHES_DIR}/config/"* "${TARGET_DIR}/config/"
+rm -rf "${TARGET_DIR}/userpatches"
 cp -r "${PATCHES_DIR}/userpatches" "${TARGET_DIR}/"
 cp "${PATCHES_DIR}/build-t95max.sh" "${TARGET_DIR}/"
 chmod +x "${TARGET_DIR}/build-t95max.sh" "${TARGET_DIR}/userpatches/customize-image.sh"
@@ -67,6 +78,11 @@ for KVER_DIR in "${TARGET_DIR}/patch/kernel/archive"/sunxi-*; do
 done
 
 echo "[+] Synced config & userpatches from ${PATCHES_DIR}."
+
+if [ "${SYNC_ONLY}" -eq 1 ]; then
+    echo "[OK] Sync complete! Run: cd ${TARGET_DIR} && ./build-t95max.sh"
+    exit 0
+fi
 
 echo "=========================================================="
 echo " [4/4] Creating cleanup script (clean.sh)"
