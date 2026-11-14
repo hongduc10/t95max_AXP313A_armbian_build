@@ -76,7 +76,7 @@ PESTER_TERMINAL=no ./compile.sh kernel BOARD=T95zPlus-h618 BRANCH=edge KERNEL_GI
 ```
 Output packages are in `~/armbian-h618/output/debs/`. Copy and install them on the running box:
 ```bash
-scp ~/armbian-h618/output/debs/linux-{image,dtb,headers}-edge-sunxi64_*.deb root@<BOX-IP>:/tmp/
+scp ~/armbian-h618/output/debs/linux-{image,dtb,headers}-current-sunxi64_*.deb root@<BOX-IP>:/tmp/
 ssh root@<BOX-IP> "dpkg -i /tmp/linux-*.deb && apt-get --fix-broken install -y && reboot"
 ```
 *(Tip: If `apt-get update` hits `403 Forbidden` over IPv6 from an Armbian mirror, force IPv4 with `echo 'Acquire::ForceIPv4 true;' > /etc/apt/apt.conf.d/99force-ipv4`.)*
