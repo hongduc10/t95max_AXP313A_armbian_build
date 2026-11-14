@@ -1,0 +1,4 @@
+===== 46_usb_log =====
+Command: dmesg | grep -Ei 'usb|xhci|ehci|ohci|dwc2|dwc3'
+
+[ 1160.398403] [ T2913] usb 5-1: USB disconnect, device number 2

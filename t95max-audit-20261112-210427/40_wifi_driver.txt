@@ -1,0 +1,18 @@
+===== 40_wifi_driver =====
+Command: for d in /sys/class/net/*; do echo ==== $d ====; readlink -f $d/device/driver; done
+
+==== /sys/class/net/dummy0 ====
+==== /sys/class/net/erspan0 ====
+==== /sys/class/net/eth0 ====
+/sys/bus/platform/drivers/sunxi-gmac
+==== /sys/class/net/gre0 ====
+==== /sys/class/net/gretap0 ====
+==== /sys/class/net/ip6_vti0 ====
+==== /sys/class/net/ip6gre0 ====
+==== /sys/class/net/ip6tnl0 ====
+==== /sys/class/net/ip_vti0 ====
+==== /sys/class/net/lo ====
+==== /sys/class/net/sit0 ====
+==== /sys/class/net/tunl0 ====
+==== /sys/class/net/wlan0 ====
+/sys/bus/sdio/drivers/bcmsdh_sdmmc

@@ -1,0 +1,11 @@
+===== 33_phy_info =====
+Command: for d in /sys/bus/mdio_bus/devices/*; do [ -e "$d" ] || continue; echo ==== $d ====; for f in phy_id phy_interface revision; do cat $d/$f 2>/dev/null; done; readlink -f $d/driver; done
+
+==== /sys/bus/mdio_bus/devices/5030000.eth-0:00 ====
+0x00441400
+rmii
+/sys/bus/mdio_bus/drivers/ephy
+==== /sys/bus/mdio_bus/devices/5030000.eth-0:10 ====
+0xc0000000
+gmii
+/sys/bus/mdio_bus/drivers/ac300

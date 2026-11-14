@@ -1,0 +1,53 @@
+===== 32_phy_devices =====
+Command: ls -lR /sys/bus/mdio_bus /sys/class/mdio_bus 2>/dev/null
+
+/sys/bus/mdio_bus:
+total 0
+drwxr-xr-x 2 root root    0 2026-11-12 22:04 devices
+drwxr-xr-x 6 root root    0 2026-11-12 22:04 drivers
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 drivers_autoprobe
+--w------- 1 root root 4096 2026-11-12 22:04 drivers_probe
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+
+/sys/bus/mdio_bus/devices:
+total 0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 5030000.eth-0:00 -> ../../../devices/platform/soc@3000000/5030000.eth/mdio_bus/5030000.eth-0/5030000.eth-0:00
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 5030000.eth-0:10 -> ../../../devices/platform/soc@3000000/5030000.eth/mdio_bus/5030000.eth-0/5030000.eth-0:10
+
+/sys/bus/mdio_bus/drivers:
+total 0
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 Generic Clause 45 PHY
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 Generic PHY
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 ac300
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 ephy
+
+/sys/bus/mdio_bus/drivers/Generic Clause 45 PHY:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/mdio_bus/drivers/Generic PHY:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/mdio_bus/drivers/ac300:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 5030000.eth-0:10 -> ../../../../devices/platform/soc@3000000/5030000.eth/mdio_bus/5030000.eth-0/5030000.eth-0:10
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/mdio_bus/drivers/ephy:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 5030000.eth-0:00 -> ../../../../devices/platform/soc@3000000/5030000.eth/mdio_bus/5030000.eth-0/5030000.eth-0:00
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/class/mdio_bus:
+total 0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 5030000.eth-0 -> ../../devices/platform/soc@3000000/5030000.eth/mdio_bus/5030000.eth-0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 fixed-0 -> ../../devices/platform/Fixed MDIO bus.0/mdio_bus/fixed-0

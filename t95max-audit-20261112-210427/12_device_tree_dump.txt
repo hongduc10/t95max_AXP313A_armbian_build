@@ -1,0 +1,4 @@
+===== 12_device_tree_dump =====
+Command: if command -v dtc >/dev/null 2>&1; then dtc -I fs -O dts /proc/device-tree; elif command -v dtc >/dev/null 2>&1; then dtc -I fs -O dts /sys/firmware/devicetree/base; else echo 'DTC NOT INSTALLED'; find /proc/device-tree -type f 2>/dev/null; fi
+
+DTC NOT INSTALLED

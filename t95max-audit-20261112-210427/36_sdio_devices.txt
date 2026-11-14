@@ -1,0 +1,33 @@
+===== 36_sdio_devices =====
+Command: for d in /sys/bus/sdio/devices/*; do [ -e "$d" ] || continue; echo ==== $d ====; for f in vendor device class modalias uevent; do echo --- $f; cat $d/$f 2>/dev/null; done; readlink -f $d/driver; done
+
+==== /sys/bus/sdio/devices/mmc2:0001:1 ====
+--- vendor
+0x02d0
+--- device
+0x4334
+--- class
+0x01
+--- modalias
+sdio:c01v02D0d4334
+--- uevent
+DRIVER=bcmsdh_sdmmc
+SDIO_CLASS=01
+SDIO_ID=02D0:4334
+MODALIAS=sdio:c01v02D0d4334
+/sys/bus/sdio/drivers/bcmsdh_sdmmc
+==== /sys/bus/sdio/devices/mmc2:0001:2 ====
+--- vendor
+0x02d0
+--- device
+0x4334
+--- class
+0x01
+--- modalias
+sdio:c01v02D0d4334
+--- uevent
+DRIVER=bcmsdh_sdmmc
+SDIO_CLASS=01
+SDIO_ID=02D0:4334
+MODALIAS=sdio:c01v02D0d4334
+/sys/bus/sdio/drivers/bcmsdh_sdmmc

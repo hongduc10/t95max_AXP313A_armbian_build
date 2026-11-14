@@ -1,0 +1,10 @@
+===== 58_gpu_driver =====
+Command: ls -lR /sys/bus/platform/drivers/panfrost /sys/bus/platform/drivers/mali 2>/dev/null
+
+/sys/bus/platform/drivers/mali:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 1800000.gpu -> ../../../../devices/platform/soc@3000000/1800000.gpu
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 module -> ../../../../module/mali_kbase
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind

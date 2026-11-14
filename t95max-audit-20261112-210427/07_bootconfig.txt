@@ -1,0 +1,4 @@
+===== 07_bootconfig =====
+Command: cat /proc/bootconfig
+
+cat: /proc/bootconfig: Permission denied

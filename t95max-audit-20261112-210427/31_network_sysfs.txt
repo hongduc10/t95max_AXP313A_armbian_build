@@ -1,0 +1,18 @@
+===== 31_network_sysfs =====
+Command: ls -lR /sys/class/net 2>/dev/null
+
+/sys/class/net:
+total 0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 dummy0 -> ../../devices/virtual/net/dummy0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 erspan0 -> ../../devices/virtual/net/erspan0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:02 eth0 -> ../../devices/platform/soc@3000000/5030000.eth/net/eth0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 gre0 -> ../../devices/virtual/net/gre0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 gretap0 -> ../../devices/virtual/net/gretap0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 ip6_vti0 -> ../../devices/virtual/net/ip6_vti0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 ip6gre0 -> ../../devices/virtual/net/ip6gre0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 ip6tnl0 -> ../../devices/virtual/net/ip6tnl0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 ip_vti0 -> ../../devices/virtual/net/ip_vti0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 lo -> ../../devices/virtual/net/lo
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 sit0 -> ../../devices/virtual/net/sit0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 tunl0 -> ../../devices/virtual/net/tunl0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:02 wlan0 -> ../../devices/platform/soc@3000000/4021000.sdmmc/mmc_host/mmc2/mmc2:0001/mmc2:0001:2/net/wlan0

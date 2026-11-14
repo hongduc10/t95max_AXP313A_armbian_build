@@ -1,0 +1,319 @@
+===== 45_usb_drivers =====
+Command: ls -lR /sys/bus/usb/drivers 2>/dev/null
+
+/sys/bus/usb/drivers:
+total 0
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 aiptek
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 asix
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 ax88179_178a
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 cdc_ether
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 cdc_ncm
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 cdc_subset
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 gtco
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 hanwang
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 hub
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 kbtab
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 net1080
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 r8152
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 snd-usb-audio
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 uas
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 ums-alauda
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 ums-cypress
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 ums-datafab
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 ums-freecom
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 ums-isd200
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 ums-jumpshot
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 ums-karma
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 ums-onetouch
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 ums-realtek
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 ums-sddr09
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 ums-sddr55
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 ums-usbat
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 ums_eneub6250
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 usb
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 usb-storage
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 usb_acecad
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 usbfs
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 usbhid
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 uvcvideo
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 xpad
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 zaurus
+
+/sys/bus/usb/drivers/aiptek:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 new_id
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 remove_id
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/asix:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 module -> ../../../../module/asix
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 new_id
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 remove_id
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/ax88179_178a:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 new_id
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 remove_id
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/cdc_ether:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 new_id
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 remove_id
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/cdc_ncm:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 module -> ../../../../module/cdc_ncm
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 new_id
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 remove_id
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/cdc_subset:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 new_id
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 remove_id
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/gtco:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 new_id
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 remove_id
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/hanwang:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 new_id
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 remove_id
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/hub:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 1-0:1.0 -> ../../../../devices/platform/soc@3000000/5101000.ehci0-controller/usb1/1-0:1.0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 2-0:1.0 -> ../../../../devices/platform/soc@3000000/5200000.ehci1-controller/usb2/2-0:1.0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 3-0:1.0 -> ../../../../devices/platform/soc@3000000/5310000.ehci2-controller/usb3/3-0:1.0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 4-0:1.0 -> ../../../../devices/platform/soc@3000000/5311000.ehci3-controller/usb4/4-0:1.0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 5-0:1.0 -> ../../../../devices/platform/soc@3000000/5101400.ohci0-controller/usb5/5-0:1.0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 6-0:1.0 -> ../../../../devices/platform/soc@3000000/5200400.ohci1-controller/usb6/6-0:1.0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 7-0:1.0 -> ../../../../devices/platform/soc@3000000/5310400.ohci2-controller/usb7/7-0:1.0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 8-0:1.0 -> ../../../../devices/platform/soc@3000000/5311400.ohci3-controller/usb8/8-0:1.0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 module -> ../../../../module/usbcore
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 new_id
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 remove_id
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/kbtab:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 new_id
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 remove_id
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/net1080:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 new_id
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 remove_id
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/r8152:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 module -> ../../../../module/r8152
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 new_id
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 remove_id
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/snd-usb-audio:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 module -> ../../../../module/snd_usb_audio
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 new_id
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 remove_id
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/uas:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 new_id
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 remove_id
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/ums-alauda:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/ums-cypress:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/ums-datafab:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/ums-freecom:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/ums-isd200:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/ums-jumpshot:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/ums-karma:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/ums-onetouch:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/ums-realtek:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 module -> ../../../../module/ums_realtek
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/ums-sddr09:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/ums-sddr55:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/ums-usbat:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/ums_eneub6250:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/usb:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 usb1 -> ../../../../devices/platform/soc@3000000/5101000.ehci0-controller/usb1
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 usb2 -> ../../../../devices/platform/soc@3000000/5200000.ehci1-controller/usb2
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 usb3 -> ../../../../devices/platform/soc@3000000/5310000.ehci2-controller/usb3
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 usb4 -> ../../../../devices/platform/soc@3000000/5311000.ehci3-controller/usb4
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 usb5 -> ../../../../devices/platform/soc@3000000/5101400.ohci0-controller/usb5
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 usb6 -> ../../../../devices/platform/soc@3000000/5200400.ohci1-controller/usb6
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 usb7 -> ../../../../devices/platform/soc@3000000/5310400.ohci2-controller/usb7
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 usb8 -> ../../../../devices/platform/soc@3000000/5311400.ohci3-controller/usb8
+
+/sys/bus/usb/drivers/usb-storage:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 module -> ../../../../module/usb_storage
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 new_id
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 remove_id
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/usb_acecad:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 new_id
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 remove_id
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/usbfs:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 module -> ../../../../module/usbcore
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 new_id
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 remove_id
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/usbhid:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 module -> ../../../../module/usbhid
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 new_id
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 remove_id
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/uvcvideo:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 module -> ../../../../module/uvcvideo
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 new_id
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 remove_id
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/xpad:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 module -> ../../../../module/xpad
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 new_id
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 remove_id
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/usb/drivers/zaurus:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 new_id
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 remove_id
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind

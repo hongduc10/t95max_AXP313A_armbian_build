@@ -1,0 +1,83 @@
+T95 MAX AUDIT
+Date: Thu Nov 12 21:05:13 +07 2026
+ADB serial: 10.19.235.30:5555
+Root available: 0
+
+Files collected:
+total 2.8M
+-rwxrwxrwx 1 hd hd  30K Nov 12 21:04 01_getprop.txt
+-rwxrwxrwx 1 hd hd 1.2K Nov 12 21:04 02_cpuinfo.txt
+-rwxrwxrwx 1 hd hd 1.2K Nov 12 21:04 03_meminfo.txt
+-rwxrwxrwx 1 hd hd  115 Nov 12 21:04 04_uname.txt
+-rwxrwxrwx 1 hd hd   89 Nov 12 21:04 05_cmdline.txt
+-rwxrwxrwx 1 hd hd  417 Nov 12 21:04 06_version.txt
+-rwxrwxrwx 1 hd hd   98 Nov 12 21:04 07_bootconfig.txt
+-rwxrwxrwx 1 hd hd 9.5K Nov 12 21:04 08_mounts.txt
+-rwxrwxrwx 1 hd hd   65 Nov 12 21:04 09_uptime.txt
+-rwxrwxrwx 1 hd hd 3.3K Nov 12 21:04 10_interrupts.txt
+-rwxrwxrwx 1 hd hd  151 Nov 12 21:04 11_device_tree_model.txt
+-rwxrwxrwx 1 hd hd  304 Nov 12 21:04 12_device_tree_dump.txt
+-rwxrwxrwx 1 hd hd   98 Nov 12 21:04 13_device_tree_paths.txt
+-rwxrwxrwx 1 hd hd  396 Nov 12 21:04 14_firmware_info.txt
+-rwxrwxrwx 1 hd hd 1.7K Nov 12 21:04 15_partitions.txt
+-rwxrwxrwx 1 hd hd   85 Nov 12 21:04 16_mtd.txt
+-rwxrwxrwx 1 hd hd  12K Nov 12 21:04 17_block_devices.txt
+-rwxrwxrwx 1 hd hd 6.7K Nov 12 21:04 18_by_name.txt
+-rwxrwxrwx 1 hd hd  750 Nov 12 21:04 19_mmc.txt
+-rwxrwxrwx 1 hd hd 2.9K Nov 12 21:04 20_block_sysfs.txt
+-rwxrwxrwx 1 hd hd 2.6K Nov 12 21:04 21_fstab.txt
+-rwxrwxrwx 1 hd hd 2.3K Nov 12 21:04 22_boot_files.txt
+-rwxrwxrwx 1 hd hd 138K Nov 12 21:04 23_kernel_config.txt
+-rwxrwxrwx 1 hd hd  505 Nov 12 21:04 24_modules.txt
+-rwxrwxrwx 1 hd hd  180 Nov 12 21:04 25_module_list.txt
+-rwxrwxrwx 1 hd hd  32K Nov 12 21:04 26_kernel_log.txt
+-rwxrwxrwx 1 hd hd 5.5K Nov 12 21:04 27_hardware_errors.txt
+-rwxrwxrwx 1 hd hd 2.6K Nov 12 21:04 28_network_interfaces.txt
+-rwxrwxrwx 1 hd hd  116 Nov 12 21:04 29_network_routes.txt
+-rwxrwxrwx 1 hd hd 2.0K Nov 12 21:04 30_network_links.txt
+-rwxrwxrwx 1 hd hd 1.3K Nov 12 21:04 31_network_sysfs.txt
+-rwxrwxrwx 1 hd hd 2.4K Nov 12 21:04 32_phy_devices.txt
+-rwxrwxrwx 1 hd hd  420 Nov 12 21:04 33_phy_info.txt
+-rwxrwxrwx 1 hd hd 1.6K Nov 12 21:04 34_ethernet_driver.txt
+-rwxrwxrwx 1 hd hd  244 Nov 12 21:04 35_ethtool.txt
+-rwxrwxrwx 1 hd hd  744 Nov 12 21:04 36_sdio_devices.txt
+-rwxrwxrwx 1 hd hd 1.7K Nov 12 21:04 37_sdio_bus.txt
+-rwxrwxrwx 1 hd hd 2.1K Nov 12 21:04 38_wifi_usb.txt
+-rwxrwxrwx 1 hd hd 2.2K Nov 12 21:04 39_wifi_interfaces.txt
+-rwxrwxrwx 1 hd hd  604 Nov 12 21:04 40_wifi_driver.txt
+-rwxrwxrwx 1 hd hd  13K Nov 12 21:04 41_wifi_firmware.txt
+-rwxrwxrwx 1 hd hd 1.7K Nov 12 21:04 42_wifi_log.txt
+-rwxrwxrwx 1 hd hd 413K Nov 12 21:04 43_wifi_dumpsys.txt
+-rwxrwxrwx 1 hd hd 2.1K Nov 12 21:04 44_usb_devices.txt
+-rwxrwxrwx 1 hd hd  14K Nov 12 21:04 45_usb_drivers.txt
+-rwxrwxrwx 1 hd hd  146 Nov 12 21:04 46_usb_log.txt
+-rwxrwxrwx 1 hd hd  29K Nov 12 21:04 47_bluetooth.txt
+-rwxrwxrwx 1 hd hd  579 Nov 12 21:04 48_bluetooth_log.txt
+-rwxrwxrwx 1 hd hd 1.5K Nov 12 21:04 49_serial_ports.txt
+-rwxrwxrwx 1 hd hd   78 Nov 12 21:04 50_pinctrl.txt
+-rwxrwxrwx 1 hd hd 1.3K Nov 12 21:04 51_regulators.txt
+-rwxrwxrwx 1 hd hd  883 Nov 12 21:04 52_regulator_details.txt
+-rwxrwxrwx 1 hd hd  687 Nov 12 21:04 53_gpio.txt
+-rwxrwxrwx 1 hd hd   73 Nov 12 21:04 54_clocks.txt
+-rwxrwxrwx 1 hd hd  329 Nov 12 21:04 55_i2c_devices.txt
+-rwxrwxrwx 1 hd hd  109 Nov 12 21:04 56_power_log.txt
+-rwxrwxrwx 1 hd hd  14K Nov 12 21:04 57_gpu_devices.txt
+-rwxrwxrwx 1 hd hd  513 Nov 12 21:04 58_gpu_driver.txt
+-rwxrwxrwx 1 hd hd  222 Nov 12 21:04 59_drm.txt
+-rwxrwxrwx 1 hd hd  297 Nov 12 21:04 60_drm_connector.txt
+-rwxrwxrwx 1 hd hd  62K Nov 12 21:04 61_display_dumpsys.txt
+-rwxrwxrwx 1 hd hd  80K Nov 12 21:04 62_surfaceflinger.txt
+-rwxrwxrwx 1 hd hd   76 Nov 12 21:04 63_screen_resolution.txt
+-rwxrwxrwx 1 hd hd  14K Nov 12 21:04 64_gpu_log.txt
+-rwxrwxrwx 1 hd hd 3.2K Nov 12 21:04 65_audio_devices.txt
+-rwxrwxrwx 1 hd hd  861 Nov 12 21:04 66_audio_cards.txt
+-rwxrwxrwx 1 hd hd  318 Nov 12 21:04 67_audio_log.txt
+-rwxrwxrwx 1 hd hd  725 Nov 12 21:04 68_thermal.txt
+-rwxrwxrwx 1 hd hd 1.5K Nov 12 21:04 69_cpu_frequency.txt
+-rwxrwxrwx 1 hd hd  22K Nov 12 21:04 70_cpu_topology.txt
+-rwxrwxrwx 1 hd hd  13K Nov 12 21:04 71_android_services.txt
+-rwxrwxrwx 1 hd hd 3.9K Nov 12 21:04 72_dumpsys_services.txt
+-rwxrwxrwx 1 hd hd 1.7M Nov 12 21:05 73_android_hardware_log.txt
+-rwxrwxrwx 1 hd hd  67K Nov 12 21:05 74_android_display_log.txt
+-rwxrwxrwx 1 hd hd  496 Nov 12 21:05 75_device_identity.txt
+-rwxrwxrwx 1 hd hd  115 Nov 12 21:05 README.txt

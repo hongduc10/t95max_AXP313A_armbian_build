@@ -1,0 +1,7 @@
+===== 59_drm =====
+Command: ls -lR /sys/class/drm 2>/dev/null
+
+/sys/class/drm:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 ttm -> ../../devices/virtual/drm/ttm
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 version

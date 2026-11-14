@@ -1,0 +1,45 @@
+===== 52_regulator_details =====
+Command: for d in /sys/class/regulator/*; do echo ==== $d ====; for f in name state microvolts min_microvolts max_microvolts; do cat $d/$f 2>/dev/null; done; done
+
+==== /sys/class/regulator/regulator.0 ====
+regulator-dummy
+==== /sys/class/regulator/regulator.1 ====
+pio-18
+1800000
+==== /sys/class/regulator/regulator.2 ====
+pio-33
+3300000
+==== /sys/class/regulator/regulator.3 ====
+axp1530-dcdc1
+enabled
+960000
+500000
+3400000
+==== /sys/class/regulator/regulator.4 ====
+axp1530-dcdc2
+enabled
+1050000
+500000
+1540000
+==== /sys/class/regulator/regulator.5 ====
+axp1530-dcdc3
+enabled
+1500000
+500000
+1540000
+==== /sys/class/regulator/regulator.6 ====
+axp1530-aldo1
+enabled
+1800000
+500000
+3500000
+==== /sys/class/regulator/regulator.7 ====
+axp1530-dldo1
+enabled
+3300000
+500000
+3500000
+==== /sys/class/regulator/regulator.8 ====
+usb0-drvvbus
+enabled
+5000000

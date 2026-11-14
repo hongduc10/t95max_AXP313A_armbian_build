@@ -1,0 +1,22 @@
+===== 49_serial_ports =====
+Command: ls -lR /dev/tty* /sys/class/tty 2>/dev/null
+
+crw-rw-rw- 1 root      root           5,   0 1970-01-01 08:00 /dev/tty
+crw------- 1 root      root         247,   0 1970-01-01 08:00 /dev/ttyAS0
+crw-rw---- 1 bluetooth net_bt_admin 247,   1 2026-11-12 21:54 /dev/ttyAS1
+crw------- 1 root      root           4,  64 1970-01-01 08:00 /dev/ttyS0
+crw------- 1 root      root           4,  65 1970-01-01 08:00 /dev/ttyS1
+crw------- 1 root      root           4,  66 1970-01-01 08:00 /dev/ttyS2
+crw------- 1 root      root           4,  67 1970-01-01 08:00 /dev/ttyS3
+
+/sys/class/tty:
+total 0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 console -> ../../devices/virtual/tty/console
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 ptmx -> ../../devices/virtual/tty/ptmx
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 tty -> ../../devices/virtual/tty/tty
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 ttyAS0 -> ../../devices/platform/soc@3000000/5000000.uart/tty/ttyAS0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 ttyAS1 -> ../../devices/platform/soc@3000000/5000400.uart/tty/ttyAS1
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 ttyS0 -> ../../devices/platform/serial8250/tty/ttyS0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 ttyS1 -> ../../devices/platform/serial8250/tty/ttyS1
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 ttyS2 -> ../../devices/platform/serial8250/tty/ttyS2
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 ttyS3 -> ../../devices/platform/serial8250/tty/ttyS3

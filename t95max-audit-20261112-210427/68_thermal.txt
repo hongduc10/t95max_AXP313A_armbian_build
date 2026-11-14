@@ -1,0 +1,11 @@
+===== 68_thermal =====
+Command: ls -lR /sys/class/thermal 2>/dev/null
+
+/sys/class/thermal:
+total 0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 cooling_device0 -> ../../devices/virtual/thermal/cooling_device0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 cooling_device1 -> ../../devices/virtual/thermal/cooling_device1
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 thermal_zone0 -> ../../devices/virtual/thermal/thermal_zone0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 thermal_zone1 -> ../../devices/virtual/thermal/thermal_zone1
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 thermal_zone2 -> ../../devices/virtual/thermal/thermal_zone2
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 thermal_zone3 -> ../../devices/virtual/thermal/thermal_zone3

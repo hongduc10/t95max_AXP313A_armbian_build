@@ -1,0 +1,7 @@
+===== 55_i2c_devices =====
+Command: ls -lR /sys/bus/i2c/devices 2>/dev/null
+
+/sys/bus/i2c/devices:
+total 0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 5-0036 -> ../../../devices/platform/soc@3000000/7081400.twi/i2c-5/5-0036
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 i2c-5 -> ../../../devices/platform/soc@3000000/7081400.twi/i2c-5

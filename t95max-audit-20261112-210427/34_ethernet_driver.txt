@@ -1,0 +1,44 @@
+===== 34_ethernet_driver =====
+Command: for d in /sys/class/net/*; do echo ==== $d ====; readlink -f $d/device/driver; readlink -f $d/phydev; cat $d/address 2>/dev/null; cat $d/speed 2>/dev/null; cat $d/duplex 2>/dev/null; done
+
+==== /sys/class/net/dummy0 ====
+/sys/devices/virtual/net/dummy0/phydev
+3a:02:46:5c:54:47
+==== /sys/class/net/erspan0 ====
+/sys/devices/virtual/net/erspan0/phydev
+00:00:00:00:00:00
+==== /sys/class/net/eth0 ====
+/sys/bus/platform/drivers/sunxi-gmac
+/sys/devices/platform/soc@3000000/5030000.eth/mdio_bus/5030000.eth-0/5030000.eth-0:00
+c4:2a:fe:02:02:60
+==== /sys/class/net/gre0 ====
+/sys/devices/virtual/net/gre0/phydev
+00:00:00:00
+==== /sys/class/net/gretap0 ====
+/sys/devices/virtual/net/gretap0/phydev
+00:00:00:00:00:00
+==== /sys/class/net/ip6_vti0 ====
+/sys/devices/virtual/net/ip6_vti0/phydev
+00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+==== /sys/class/net/ip6gre0 ====
+/sys/devices/virtual/net/ip6gre0/phydev
+00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+==== /sys/class/net/ip6tnl0 ====
+/sys/devices/virtual/net/ip6tnl0/phydev
+00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+==== /sys/class/net/ip_vti0 ====
+/sys/devices/virtual/net/ip_vti0/phydev
+00:00:00:00
+==== /sys/class/net/lo ====
+/sys/devices/virtual/net/lo/phydev
+00:00:00:00:00:00
+==== /sys/class/net/sit0 ====
+/sys/devices/virtual/net/sit0/phydev
+00:00:00:00
+==== /sys/class/net/tunl0 ====
+/sys/devices/virtual/net/tunl0/phydev
+00:00:00:00
+==== /sys/class/net/wlan0 ====
+/sys/bus/sdio/drivers/bcmsdh_sdmmc
+/sys/devices/platform/soc@3000000/4021000.sdmmc/mmc_host/mmc2/mmc2:0001/mmc2:0001:2/net/wlan0/phydev
+94:a1:a2:1a:22:0b

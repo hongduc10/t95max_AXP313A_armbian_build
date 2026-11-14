@@ -1,0 +1,597 @@
+===== 74_android_display_log =====
+Command: logcat -b all -d | grep -Ei 'SurfaceFlinger|DisplayManager|HDMI|HWC|Composer'
+
+01-01 08:00:02.517     1     1 I         : HDMI 2.0 driver init start!
+01-01 08:00:02.517     1     1 I         : boot_hdmi=false
+01-01 08:00:02.518     1     1 E         : ERROR: pinctrl_get for HDMI2.0 DDC fail
+01-01 08:00:02.524     1     1 I Get hdmi_power0: aldo1
+01-01 08:00:02.524     1     1 I Get hdmi_power1: dcdc1
+01-01 08:00:02.526     1     1 I         : hdmi_cec_init
+01-01 08:00:02.526     1     1 I         : HDMI2.0 module init end
+01-01 08:00:03.159    34    34 I [HDMI receive params]: tv mode: 0xa format:0x0 data bits:0x0 eotf:0x4 cs:0x101 dvi_hdmi:2 range:2 scan:0 aspect_ratio:8
+01-01 08:00:04.207    34    34 W type    : 4,mode:10,fmt:rgb,bits:8bits,eotf:4,cs:257 dvi_hdmi:2, range:2 scan:0 ratio:8
+01-01 08:00:04.575     1     1 I         : #3: ahubhdmi
+01-01 08:00:05.907   124   124 I         : hdmi_hpd_sys_config_release
+01-01 08:00:08.610   256   256 D hdmi-cec: Loading: sunxi HDMI CEC module
+01-01 08:00:08.613   256   256 I HidlServiceManagement: Registered android.hardware.tv.cec@1.0::IHdmiCec/default
+01-01 08:00:08.614   256   256 I LegacySupport: Registration complete for android.hardware.tv.cec@1.0::IHdmiCec/default.
+01-01 08:00:08.615   256   281 I hdmi-cec: HDMI-CEC EventThread start
+01-01 08:00:08.948   252   252 I sunxihwc: open: Loading: sunxi hwcomposer module
+01-01 08:00:08.951   252   252 I HidlServiceManagement: Registered android.hardware.graphics.composer@2.2::IComposer/default
+01-01 08:00:08.951   252   252 I HidlServiceManagement: Removing namespace from process name android.hardware.graphics.composer@2.2-service to composer@2.2-service.
+01-01 08:00:09.176   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device VINTF manifest.
+01-01 08:00:09.190   266   266 I SurfaceFlinger: Using HWComposer service: default
+01-01 08:00:09.190   266   266 I SurfaceFlinger: SurfaceFlinger is starting
+01-01 08:00:09.191   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.1::ISurfaceFlingerConfigs/default in either framework or device VINTF manifest.
+01-01 08:00:09.191   266   266 I SurfaceFlinger: Disabling blur effects, they are not supported.
+01-01 08:00:09.205   266   266 I SurfaceFlinger: SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+01-01 08:00:10.381   246   246 D audio_hw_primary: /sys/class/sound/card3/id, ahubhdmi, len: 9
+01-01 08:00:10.381   246   246 D audio_hw_primary: linux name = ahubhdmi, android name = AUDIO_HDMI
+01-01 08:00:10.381   246   246 D audio_hw_primary: find name map, card_id = ahubhdmi, card_name = AUDIO_HDMI 
+01-01 08:00:10.382   246   246 V audio_hw_primary: card: 3, name: AUDIO_HDMI, capture: 1, playback: 1
+01-01 08:00:10.382   246   246 D audio_hw_primary: getCardNumbyName: name = AUDIO_HDMI , card = 3
+01-01 08:00:10.384   246   246 V audio_hw_primary: init_audio_devices_active: get property vendor.audio.output.active: AUDIO_CODEC,AUDIO_HDMI
+01-01 08:00:10.384   246   246 V audio_hw_primary: set property vendor.audio.output.active: AUDIO_CODEC,AUDIO_HDMI ok
+01-01 08:00:10.384   246   246 V audio_hw_primary: AUDIO_HDMI output device will be active
+01-01 08:00:10.868   252   252 I ComposerResources: failed to get mapper 4.0 service, falling back to mapper 3.0
+01-01 08:00:10.868   252   252 I ComposerResources: failed to get mapper 3.0 service, falling back to mapper 2.0
+01-01 08:00:10.873   252   406 I sunxihwc: threadLoop: EventThread start
+01-01 08:00:10.873   252   252 I sunxihwc: createDeviceFactory: IDeviceFactory from hardware/aw/display/hwc-hal/disp2/HomletDeviceFactory.cpp
+01-01 08:00:10.873   252   252 I sunxihwc: Device name: blueline
+01-01 08:00:10.892   252   252 D sunxihwc: Device config file: /vendor/etc/dispconfigs/homlet-default.json
+01-01 08:00:10.905   252   252 D sunxihwc: Parse 'Display0' config
+01-01 08:00:10.905   252   252 D sunxihwc: Parse 'Display1' config
+01-01 08:00:10.906   252   407 I sunxihwc: Device name: blueline
+01-01 08:00:10.906   252   407 D sunxihwc: Device config file: /vendor/etc/dispconfigs/homlet-default.json
+01-01 08:00:10.907   252   407 D sunxihwc: Parse 'Display0' config
+01-01 08:00:10.907   252   407 D sunxihwc: Parse 'Display1' config
+01-01 08:00:10.907   252   252 D android.hardware.graphics.composer@2.2-service: IDisplayConfig register: ok
+01-01 08:00:10.907   252   252 I sunxihwc: initialize: DisplayConfigService init: ok
+01-01 08:00:10.907   252   407 W displayd:    InterfaceType=HDMI
+01-01 08:00:10.904   252   252 I auditd  : type=1400 audit(0.0:21): avc: denied { read } for comm="MQ-Thread" name="u:object_r:system_prop:s0" dev="tmpfs" ino=3288 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:system_prop:s0 tclass=file permissive=1
+01-01 08:00:10.904   252   252 I MQ-Thread: type=1400 audit(0.0:21): avc: denied { read } for name="u:object_r:system_prop:s0" dev="tmpfs" ino=3288 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:system_prop:s0 tclass=file permissive=1
+01-01 08:00:10.904   252   252 I auditd  : type=1400 audit(0.0:22): avc: denied { open } for comm="MQ-Thread" path="/dev/__properties__/u:object_r:system_prop:s0" dev="tmpfs" ino=3288 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:system_prop:s0 tclass=file permissive=1
+01-01 08:00:10.904   252   252 I MQ-Thread: type=1400 audit(0.0:22): avc: denied { open } for path="/dev/__properties__/u:object_r:system_prop:s0" dev="tmpfs" ino=3288 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:system_prop:s0 tclass=file permissive=1
+01-01 08:00:10.904   252   252 I auditd  : type=1400 audit(0.0:23): avc: denied { getattr } for comm="MQ-Thread" path="/dev/__properties__/u:object_r:system_prop:s0" dev="tmpfs" ino=3288 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:system_prop:s0 tclass=file permissive=1
+01-01 08:00:10.904   252   252 I MQ-Thread: type=1400 audit(0.0:23): avc: denied { getattr } for path="/dev/__properties__/u:object_r:system_prop:s0" dev="tmpfs" ino=3288 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:system_prop:s0 tclass=file permissive=1
+01-01 08:00:10.904   252   252 I auditd  : type=1400 audit(0.0:24): avc: denied { map } for comm="MQ-Thread" path="/dev/__properties__/u:object_r:system_prop:s0" dev="tmpfs" ino=3288 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:system_prop:s0 tclass=file permissive=1
+01-01 08:00:10.904   252   252 I MQ-Thread: type=1400 audit(0.0:24): avc: denied { map } for path="/dev/__properties__/u:object_r:system_prop:s0" dev="tmpfs" ino=3288 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:system_prop:s0 tclass=file permissive=1
+01-01 08:00:10.908   252   252 I auditd  : type=1400 audit(0.0:25): avc: denied { read } for comm="MQ-Thread" name="u:object_r:default_prop:s0" dev="tmpfs" ino=3162 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=1
+01-01 08:00:10.908   252   252 I MQ-Thread: type=1400 audit(0.0:25): avc: denied { read } for name="u:object_r:default_prop:s0" dev="tmpfs" ino=3162 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=1
+01-01 08:00:10.909   252   407 W displayd: xxxxxxx: Device hdmi init
+01-01 08:00:10.908   252   252 I auditd  : type=1400 audit(0.0:26): avc: denied { open } for comm="MQ-Thread" path="/dev/__properties__/u:object_r:default_prop:s0" dev="tmpfs" ino=3162 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=1
+01-01 08:00:10.908   252   252 I MQ-Thread: type=1400 audit(0.0:26): avc: denied { open } for path="/dev/__properties__/u:object_r:default_prop:s0" dev="tmpfs" ino=3162 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=1
+01-01 08:00:10.908   252   252 I auditd  : type=1400 audit(0.0:27): avc: denied { getattr } for comm="MQ-Thread" path="/dev/__properties__/u:object_r:default_prop:s0" dev="tmpfs" ino=3162 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=1
+01-01 08:00:10.908   252   252 I MQ-Thread: type=1400 audit(0.0:27): avc: denied { getattr } for path="/dev/__properties__/u:object_r:default_prop:s0" dev="tmpfs" ino=3162 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=1
+01-01 08:00:10.908   252   252 I auditd  : type=1400 audit(0.0:28): avc: denied { map } for comm="MQ-Thread" path="/dev/__properties__/u:object_r:default_prop:s0" dev="tmpfs" ino=3162 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=1
+01-01 08:00:10.908   252   252 I MQ-Thread: type=1400 audit(0.0:28): avc: denied { map } for path="/dev/__properties__/u:object_r:default_prop:s0" dev="tmpfs" ino=3162 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=1
+01-01 08:00:10.910   252   407 W displayd:     hdmi: /sys/class/extcon/extcon0/state
+01-01 08:00:10.908   252   252 I auditd  : type=1400 audit(0.0:29): avc: denied { getattr } for comm="MQ-Thread" path="/sys/devices/platform/soc@3000000/6520000.tv0/extcon/extcon1/state" dev="sysfs" ino=19292 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+01-01 08:00:10.908   252   252 I MQ-Thread: type=1400 audit(0.0:29): avc: denied { getattr } for path="/sys/devices/platform/soc@3000000/6520000.tv0/extcon/extcon1/state" dev="sysfs" ino=19292 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+01-01 08:00:10.915   252   252 D sunxihwc: allocateBuffer: mBufferCount=6, size=6
+01-01 08:00:10.915   252   252 D sunxihwc: setHotplugState: mbHotplug = 1
+01-01 08:00:10.915   252   252 E sunxihwc: notifyDeviceChanged: DeviceChangedListener not register yet!
+01-01 08:00:10.915   252   252 I sunxihwc: setVendorInterface: register IVendorInterface: 0xf4b1d310
+01-01 08:00:10.915   252   252 D sunxihwc: HAL device config file: /vendor/etc/dispconfigs/homlet-default.json
+01-01 08:00:10.915   252   252 D sunxihwc: Displays (2 entries)
+01-01 08:00:10.915   252   252 D sunxihwc: + Display{id=0, framebuffer=1920x1080(override=1), dpi=160x160}
+01-01 08:00:10.915   252   252 D sunxihwc:    DisplayEnginePortId=0
+01-01 08:00:10.915   252   252 D sunxihwc:    InterfaceType=HDMI
+01-01 08:00:10.915   252   252 D sunxihwc:    DefaultOutputMode=0
+01-01 08:00:10.915   252   252 D sunxihwc:    HotplugSupported=0
+01-01 08:00:10.915   252   252 D sunxihwc:    AfbcSupported=0
+01-01 08:00:10.915   252   252 D sunxihwc:    HardwareRotateSupported=0
+01-01 08:00:10.915   252   252 D sunxihwc:    BandwidthLimited=338800 Bytes per frame
+01-01 08:00:10.915   252   252 D sunxihwc: + Display{id=1, framebuffer=1920x1080(override=1), dpi=160x160}
+01-01 08:00:10.915   252   252 D sunxihwc:    DisplayEnginePortId=1
+01-01 08:00:10.915   252   252 D sunxihwc:    InterfaceType=CVBS
+01-01 08:00:10.915   252   252 D sunxihwc:    DefaultOutputMode=0
+01-01 08:00:10.915   252   252 D sunxihwc:    HotplugSupported=0
+01-01 08:00:10.915   252   252 D sunxihwc:    AfbcSupported=0
+01-01 08:00:10.915   252   252 D sunxihwc:    HardwareRotateSupported=0
+01-01 08:00:10.915   252   252 D sunxihwc:    BandwidthLimited=338800 Bytes per frame
+01-01 08:00:10.915   252   252 W sunxihwc: bringupDevices: display.1 was off, request type 2, try to bringup it!
+01-01 08:00:10.915   252   252 I sunxihwc: scanConnectedDevice: wait for device connect
+01-01 08:00:11.010   252   407 W displayd: xxxxxxx: setupDefaultOutput: hdmi user strategy: 255
+01-01 08:00:11.010   252   407 W displayd: xxxxxxx: HDMI performDefaultConfig: not connected yet
+01-01 08:00:11.010   252   407 I sunxihwc: switchDevice: display[1]: type=2 mode=0 enable=0
+01-01 08:00:11.010   252   407 I sunxihwc: switchDevice: display[0]: type=4 mode=10 enable=1
+01-01 08:00:11.010   252   407 D sunxihwc: setHotplugState: mbHotplug = 1
+01-01 08:00:11.010   252   407 I sunxihwc: createSyncTimeline: DisplayEngine Frequency: 696000000 Hz
+01-01 08:00:11.010   252   407 I sunxihwc: setup: timeline0 create
+01-01 08:00:11.011   252   407 E sunxihwc: readFromFile: Could not open '/sys/firmware/devicetree/base/dram/dram_clk', No such file or directory(2)
+01-01 08:00:11.011   252   407 E sunxihwc: readFromFile: Could not open '/sys/firmware/devicetree/base/dram/dram_mr1', No such file or directory(2)
+01-01 08:00:11.011   252   407 E sunxihwc: readFromFile: Could not open '/sys/firmware/devicetree/base/dram/dram_type', No such file or directory(2)
+01-01 08:00:11.011   252   407 I sunxihwc: getDramInfoFromDeviceTree: draminfo: freq 0 MHz, bus width 32 bits, type 0
+01-01 08:00:11.011   252   407 I sunxihwc: computeEffectiveBandwidth: dram effective bandwidth: 0 MBytes
+01-01 08:00:11.011   252   407 E sunxihwc: calculateBandwidthLimitation: getDramFrequency return error(0), fallback to default bandwidth config
+01-01 08:00:11.011   252   407 I sunxihwc: setup: Bandwidth limitation: 49152000 Bytes per frame
+01-01 08:00:11.011   252   410 I sunxihwc: threadLoop: set CommitThread priority as HAL_PRIORITY_URGENT_DISPLAY
+01-01 08:00:11.011   252   407 D sunxihwc: setScreenSize: varW,h=1920,1080
+01-01 08:00:11.011   252   407 I sunxihwc: setDisplaydCb: get mDisplaydCb =0x0x696c4372
+01-01 08:00:11.011   252   407 D sunxihwc: updateConnectedDevices: wb device 0x0 plugout! size=1
+01-01 08:00:11.011   252   407 I sunxihwc: updateConnectedDevices: display[0] connected=1 type=4 device=0xf4b1c60c
+01-01 08:00:11.011   252   407 I sunxihwc: updateConnectedDevices: display[1] connected=0 type=2 device=0x0
+01-01 08:00:11.011   252   407 D sunxihwc: enqueueEvent: enqueueEvent: event 1
+01-01 08:00:11.011   252   252 D sunxihwc: enqueueEvent: enqueueEvent: event 1
+01-01 08:00:11.011   252   406 W sunxihwc: deviceChangedEventProcess: Display.0 (hdmi0) connect
+01-01 08:00:11.011   252   407 I sunxihwc: registerCallback: registerCallback mEventCallback =0x0
+01-01 08:00:11.011   252   406 I sunxihwc: onHotplugReceived: display(0) connect state[1]
+01-01 08:00:11.011   252   252 I sunxihwc: waitForHotplugIssued: Wait for display connect
+01-01 08:00:11.011   252   407 I sunxihwc: setDisplaydCb: get mDisplaydCb =0x0xf4b5c4e0
+01-01 08:00:11.011   252   406 I sunxihwc: onHotplugReceived: display size: 0 display.0 0 display.1 0 display.0 0
+01-01 08:00:11.011   252   406 D sunxihwc: setFrameSize: uiW,h=1920,1080
+01-01 08:00:11.011   252   406 W sunxihwc: onHotplugReceived: display(0) is 0xf49fd010
+01-01 08:00:11.011   252   406 D sunxihwc: setDisplays: display =0xf49fd010
+01-01 08:00:11.011   252   406 D sunxihwc: setDisplays: display size=1
+01-01 08:00:11.011   252   406 D sunxihwc: setHotplugState: mbHotplug = 0
+01-01 08:00:11.011   252   406 D sunxihwc: setHotplugState: mbHotplug = 0
+01-01 08:00:11.012   266   266 I SurfaceFlinger: onComposerHalHotplug(0, connected)
+01-01 08:00:11.012   266   266 I HWComposer: Switching to legacy multi-display mode
+01-01 08:00:11.012   252   411 I sunxihwc: pollThreadLoop: polling VsyncThread start
+01-01 08:00:11.013   266   266 E HWComposer: getAttribute: getDisplayAttribute failed for display 0: BadConfig (1)
+01-01 08:00:11.013   266   266 E HWComposer: getDisplayConnectionType: getDisplayConnectionType failed for display 0: Unsupported (8)
+01-01 08:00:11.014   252   252 D sunxihwc: getHdrCapabilities: getHdrCapabilities: support hdr10 and hlg
+01-01 08:00:11.015   266   266 W HwcComposer: getPerFrameMetadataKeys failed with 8
+01-01 08:00:11.028   266   266 I SurfaceFlinger: Dispatching display hotplug event displayId=0, connected=1
+01-01 08:00:11.029   266   418 W SurfaceFlinger: Failed to set thread name on dispatch thread
+01-01 08:00:12.818   266   266 D SurfaceFlinger: Setting power mode 2 on display 0
+01-01 08:00:12.819   252   252 D sunxihwc: setPowerMode: device(hdmi0) power mode: On
+01-01 08:00:12.819   252   252 I sunxihwc: setRuntimeState: disp2 blank control [unblank], driver usage [1]
+01-01 08:00:12.819   266   266 D SurfaceFlinger: Finished setting power mode 2 on display 0
+01-01 08:00:12.831     1     1 I init    : Control message: Processed ctl.start for 'bootanim' from pid: 266 (/system/bin/surfaceflinger)
+01-01 08:00:13.107   266   315 E HWComposer: getSupportedContentTypes: getSupportedContentTypes failed for display 0: Unsupported (8)
+01-01 08:00:16.113   479   511 I SystemConfig: Reading permissions from /system/etc/permissions/android.hardware.hdmi.cec.xml
+01-01 08:00:16.814   479   479 I SystemServerTiming: StartDisplayManager
+01-01 08:00:16.814   479   479 I SystemServiceManager: Starting com.android.server.display.DisplayManagerService
+01-01 08:00:16.843   266   315 E HWComposer: getSupportedContentTypes: getSupportedContentTypes failed for display 0: Unsupported (8)
+08-27 14:24:06.175   479   505 W WindowManager: /sys/class/extcon/hdmi/state not found while attempting to determine initial state
+08-27 14:24:06.175   479   505 W WindowManager: java.io.FileNotFoundException: /sys/class/extcon/hdmi/state: open failed: ENOENT (No such file or directory)
+08-27 14:24:06.175   479   505 W WindowManager: 	at com.android.server.policy.PhoneWindowManager$HdmiVideoExtconUEventObserver.init(PhoneWindowManager.java:5772)
+08-27 14:24:06.175   479   505 W WindowManager: 	at com.android.server.policy.PhoneWindowManager$HdmiVideoExtconUEventObserver.access$5200(PhoneWindowManager.java:5764)
+08-27 14:24:06.175   479   505 W WindowManager: 	at com.android.server.policy.PhoneWindowManager.initializeHdmiStateInternal(PhoneWindowManager.java:3530)
+08-27 14:24:06.175   479   505 W WindowManager: 	at com.android.server.policy.PhoneWindowManager.initializeHdmiState(PhoneWindowManager.java:3494)
+08-27 14:24:06.191   479   479 I SystemServerTiming: DisplayManagerWindowManagerAndInputReady
+08-27 14:24:07.176   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+08-27 14:24:07.176   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+01-01 08:00:20.083   633   633 I         : HDMI Audio Enable Successfully
+08-27 14:24:07.188   479   479 I SystemServerTiming: StartHdmiControlService
+08-27 14:24:07.188   479   479 I SystemServiceManager: Starting com.android.server.hdmi.HdmiControlService
+08-27 14:24:07.197   479   479 D HdmiControlService: AWAW initService mHdmiControlEnabled: 0
+08-27 14:24:07.199   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.tv.cec@1.1::IHdmiCec/default in either framework or device VINTF manifest.
+08-27 14:24:07.200   479   479 E HDMI    : [1]:Couldn't connect to cec@1.1java.util.NoSuchElementException
+08-27 14:24:07.200   479   479 W HDMI    : [1]:Couldn't get tv.cec service.
+08-27 14:24:07.200   479   479 W HDMI    : [1]:Unable to use cec@1.1
+08-27 14:24:07.202   479   479 I android_os_HwBinder: HwBinder: Starting thread pool for getting: android.hardware.tv.cec@1.0::IHdmiCec/default
+08-27 14:24:07.207   479   479 I HdmiControlService: Device does not support MHL-control.
+08-27 14:24:07.208   256   256 D hdmi-cec: setOption, flag=0x0002, value=0x00000000
+08-27 14:24:07.209   479   479 D HdmiControlService: AWAW initService hdmiControlEnabledDefault: 0
+08-27 14:24:07.209   479   479 D HdmiControlService: AWAW initService hdmiControlEnabledModify: 0
+08-27 14:24:07.253   266   266 I SurfaceFlinger: Enter boot animation
+08-27 14:24:07.256   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:07.304   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:07.337   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:07.387   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:07.420   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:07.454   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:07.481   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.1::ISurfaceFlingerConfigs/default in either framework or device VINTF manifest.
+08-27 14:24:07.482   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.1::ISurfaceFlingerConfigs/default in either framework or device VINTF manifest.
+08-27 14:24:07.485   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.1::ISurfaceFlingerConfigs/default in either framework or device VINTF manifest.
+08-27 14:24:07.487   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:07.520   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:07.524   266   266 D SurfaceFlinger: Setting power mode 2 on display 0
+08-27 14:24:07.537   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:07.570   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:07.604   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:07.637   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:07.670   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:07.703   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:07.710   479   479 I SystemServerTiming: MakeDisplayManagerServiceReady
+08-27 14:24:07.737   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:07.770   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:07.803   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:07.837   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:07.870   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:07.904   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:07.937   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:07.970   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.003   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.037   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.070   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.103   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.137   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.170   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.204   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.238   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.271   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.304   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.338   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.371   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.404   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.437   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.474   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.504   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.537   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.570   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.603   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.637   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.670   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.703   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.737   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.771   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.804   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.837   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.870   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.904   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.937   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:08.975   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.010   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.038   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.071   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.104   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.138   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.171   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.204   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.237   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.271   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.304   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.337   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.370   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.404   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.437   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.470   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.504   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.537   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.570   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.604   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.637   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.670   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.687   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.705   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.737   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.770   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.803   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.837   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.871   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.904   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.937   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:09.971   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.004   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.037   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.070   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.103   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.137   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.171   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.204   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.237   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.271   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.304   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.337   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.355   247   911 I bt_hwcfg: bt vendor lib: set UART baud 1500000
+08-27 14:24:10.371   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.383   247   911 D bt_hwcfg: Chipset BCM43342A
+08-27 14:24:10.383   247   911 D bt_hwcfg: Target name = [BCM43342A]
+08-27 14:24:10.383   247   911 D bt_hwcfg: ###AMPAK FW Auto detection patch version = [v1.1 20161117]###
+08-27 14:24:10.383   247   911 D bt_hwcfg: Updated Target name = [BCM43342A]
+08-27 14:24:10.384   247   911 D bt_hwcfg: Target name = [BCM43342]
+08-27 14:24:10.384   247   911 D bt_hwcfg: ###AMPAK FW Auto detection patch version = [v1.1 20161117]###
+08-27 14:24:10.384   247   911 D bt_hwcfg: Updated Target name = [BCM43342]
+08-27 14:24:10.384   247   911 I bt_hwcfg: Found patchfile: /vendor/etc/firmware//bcm43342.hcd
+08-27 14:24:10.387   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.404   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.407   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device VINTF manifest.
+08-27 14:24:10.437   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.447   266   315 E HWComposer: getSupportedContentTypes: getSupportedContentTypes failed for display 0: Unsupported (8)
+08-27 14:24:10.470   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.504   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.538   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.570   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.604   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.637   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.670   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.677   676   676 I SystemUIService: Found SurfaceFlinger's GPU Priority: 12545
+08-27 14:24:10.704   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.721   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.737   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.754   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.772   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.804   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.837   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.854   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.872   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.904   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.937   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:10.948   247   911 I bt_hwcfg: bt vendor lib: set UART baud 115200
+08-27 14:24:10.948   247   911 D bt_hwcfg: Settlement delay -- 100 ms
+08-27 14:24:10.948   247   911 I bt_hwcfg: Setting fw settlement delay to 100 
+08-27 14:24:10.970   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.003   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.037   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.059   247   911 I bt_hwcfg: bt vendor lib: set UART baud 1500000
+08-27 14:24:11.059   247   911 I bt_hwcfg: Setting local bd addr to C0:DB:F4:60:EC:FD
+08-27 14:24:11.070   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.084   247   911 I bt_hwcfg: vendor lib fwcfg completed
+08-27 14:24:11.104   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.137   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.170   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.187   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.205   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.211   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device VINTF manifest.
+08-27 14:24:11.221   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.237   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.257   266   567 I SurfaceFlinger: Boot is finished (14973 ms)
+08-27 14:24:11.270   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.304   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.338   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.371   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.404   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.437   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.470   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.504   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.538   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.570   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.604   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.638   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.670   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.704   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.722   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.737   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.772   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.804   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.837   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.870   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.904   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.937   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:11.971   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.005   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.037   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.070   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.104   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.137   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.170   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.204   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.237   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.271   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.304   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.337   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.370   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.404   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.437   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.470   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.504   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.537   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.571   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.604   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.638   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.654   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.670   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.704   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.738   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.755   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.772   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.804   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.837   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.870   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.904   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.938   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:12.971   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.004   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.037   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.070   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.104   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.137   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.170   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.204   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.237   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.270   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.304   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.337   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.370   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.404   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.437   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.470   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.504   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.537   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.570   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.604   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.637   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.670   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.705   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.721   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.738   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.771   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.804   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.837   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.870   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.904   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.937   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:13.970   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.004   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.037   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.070   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.104   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.137   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.171   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.204   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.237   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.250  1153  1192 I CallLogProvider: Syncing call composer pics -- source user=0, isShadow=true, forAllUser=false
+08-27 14:24:14.271   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.304   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.337   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.371   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.404   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.437   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.458  1153  1192 I CallLogProvider: Syncing call composer pics -- got []
+08-27 14:24:14.470   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.504   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.537   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.570   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.604   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.637   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.670   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.704   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.737   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.770   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.804   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.837   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.870   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.904   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.937   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:14.970   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:15.004   252   252 W sunxihwc: isHdrpBuffer: cderc flag something wrong. handle->ion_metadata_flag = 0
+08-27 14:24:15.815   479   479 D AudioDeviceManagerObserver: ~~~~~~~~ AudioDeviceManagerObserver: findNameMap: id: ahubhdmi
+08-27 14:24:15.815   479   479 D AudioDeviceManagerObserver: ~~~~~~~~ AudioDeviceManagerObserver: findNameMap: id: ahubhdmi
+08-27 14:24:15.815   479   479 D AudioDeviceManagerObserver: AudioDeviceManagerObserver: name_linux: ahubhdmi, name_android: AUDIO_USB_ahubhdmi
+08-27 14:24:15.864   246   301 D audio_hw_primary: in dev:AUDIO_HDMI
+08-27 14:24:15.864   246   301 D audio_hw_primary: out dev:AUDIO_HDMI
+08-27 14:24:15.864   246   301 D audio_hw_primary: out playback: AUDIO_CODEC,AUDIO_SPDIF,AUDIO_HDMI
+08-27 14:24:15.886   479   479 D AudioManagerEx: type audio_devices_out  list AUDIO_CODEC,AUDIO_SPDIF,AUDIO_HDMI=
+08-27 14:24:15.893   479   479 D AudioManagerEx: hdmiAvailable=true  list=[AUDIO_CODEC]
+08-27 14:24:15.954   479   479 D AudioManagerEx: hdmiAvailable=true  list=[AUDIO_CODEC, AUDIO_SPDIF]
+08-27 14:24:16.009   479   479 D AudioManagerEx: state=audio_devices_out_active,dev=[AUDIO_CODEC, AUDIO_SPDIF, AUDIO_HDMI]
+08-27 14:24:16.009   479   479 D AudioManagerEx: hdmiAvailable=true  list=[AUDIO_CODEC, AUDIO_SPDIF, AUDIO_HDMI]
+08-27 14:24:16.011   479   479 D AudioManagerEx:   audio=AUDIO_CODEC,AUDIO_SPDIF,AUDIO_HDMI
+08-27 14:24:16.015   246   402 V audio_hw_primary: adev_set_parameters, audio_devices_out_active=AUDIO_CODEC,AUDIO_SPDIF,AUDIO_HDMI
+08-27 14:24:16.015   246   402 V audio_hw_primary: out AUDIO_PARAMETER_DEVICES_OUT_ACTIVE: AUDIO_CODEC,AUDIO_SPDIF,AUDIO_HDMI
+08-27 14:24:16.024   246   402 V audio_hw_primary: set property vendor.audio.output.active: AUDIO_CODEC,AUDIO_SPDIF,AUDIO_HDMI ok
+08-27 14:24:16.024   246   402 V audio_hw_primary: AUDIO_HDMI output device will be active
+08-27 14:24:16.027   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+08-27 14:24:16.027   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+08-27 14:24:16.038   479   479 D AudioManagerEx: Update Settings.System.AUDIO_OUTPUT_CHANNEL, now save audio is AUDIO_CODEC,AUDIO_SPDIF,AUDIO_HDMI
+08-27 14:24:16.044   479   479 D AudioManagerPolicy: curType4 isHdmiPlugin =false
+08-27 14:24:16.047   479   479 D AudioManagerPolicy: save audio is AUDIO_CODEC,AUDIO_SPDIF,AUDIO_HDMI
+08-27 14:24:16.047   479   479 D AudioManagerEx: state=audio_devices_out_active,dev=[AUDIO_SPDIF, AUDIO_CODEC, AUDIO_HDMI]
+08-27 14:24:16.047   479   479 D AudioManagerEx: hdmiAvailable=true  list=[AUDIO_SPDIF, AUDIO_CODEC, AUDIO_HDMI]
+08-27 14:24:16.049   479   479 D AudioManagerEx:   audio=AUDIO_SPDIF,AUDIO_CODEC,AUDIO_HDMI
+08-27 14:24:16.053   246   402 V audio_hw_primary: adev_set_parameters, audio_devices_out_active=AUDIO_SPDIF,AUDIO_CODEC,AUDIO_HDMI
+08-27 14:24:16.054   246   402 V audio_hw_primary: out AUDIO_PARAMETER_DEVICES_OUT_ACTIVE: AUDIO_SPDIF,AUDIO_CODEC,AUDIO_HDMI
+08-27 14:24:16.055   246   402 V audio_hw_primary: set property vendor.audio.output.active: AUDIO_SPDIF,AUDIO_CODEC,AUDIO_HDMI ok
+08-27 14:24:16.056   246   402 V audio_hw_primary: AUDIO_HDMI output device will be active
+08-27 14:24:16.065   479   479 D AudioManagerEx: Update Settings.System.AUDIO_OUTPUT_CHANNEL, now save audio is AUDIO_SPDIF,AUDIO_CODEC,AUDIO_HDMI
+08-27 14:24:16.068   246   402 D audio_hw_primary: in dev:AUDIO_HDMI
+08-27 14:24:16.068   246   402 D audio_hw_primary: out dev:AUDIO_HDMI
+08-27 14:24:16.068   246   402 D audio_hw_primary: in capture: AUDIO_SPDIF,AUDIO_HDMI,AUDIO_I2S2
+08-27 14:24:16.069   479   479 D AudioManagerEx: type audio_devices_in  list AUDIO_SPDIF,AUDIO_HDMI,AUDIO_I2S2=
+08-27 14:24:16.078   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+08-27 14:24:16.079   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+08-27 14:24:16.090   479   479 D AudioDeviceManagerObserver: name: AUDIO_HDMI, state: 0, type: 1
+08-27 14:24:16.092   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+08-27 14:24:16.093   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+08-27 14:24:16.100   479   479 D AudioManagerPolicy: On Audio device plug in/out receive,name=AUDIO_HDMI type=1 state=0 extra=null
+08-27 14:24:16.101   479   479 V AudioManagerPolicy: chengkan-------------   hdmi inactive
+08-27 14:24:16.271   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device VINTF manifest.
+08-27 14:24:16.334   266   577 E HWComposer: getSupportedContentTypes: getSupportedContentTypes failed for display 0: Unsupported (8)
+11-12 21:42:05.454  2290  2309 I CallLogProvider: Syncing call composer pics -- source user=0, isShadow=true, forAllUser=false
+11-12 21:42:05.895  2290  2309 I CallLogProvider: Syncing call composer pics -- got []
+01-01 08:05:37.380   124   124 I         : HDMI cable is connected
+11-12 21:43:01.766   252   412 D displayd: hotplug change: name=6000000.hdmi, state=HDMI=1 
+11-12 21:43:01.766   252   412 D displayd: HotplugMonitor: 6000000.hdmi connected=1
+11-12 21:43:01.781   479   479 D AudioDeviceManagerObserver: name: AUDIO_HDMI, state: 1, type: 1
+11-12 21:43:01.783   479   479 D AudioManagerPolicy: On Audio device plug in/out receive,name=AUDIO_HDMI type=1 state=1 extra=null
+11-12 21:43:01.783   479   479 D AudioManagerPolicy: notifyHdmiAvailable hdmi is available
+11-12 21:43:01.780     1     1 I auditd  : type=1107 audit(0.0:263): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc: denied { set } for property=vendor.sys.tv_vdid_fex pid=252 uid=1000 gid=1003 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_default_prop:s0 tclass=property_service permissive=1'
+11-12 21:43:01.780     1     1 I /system/bin/init: type=1107 audit(0.0:263): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc: denied { set } for property=vendor.sys.tv_vdid_fex pid=252 uid=1000 gid=1003 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vendor_default_prop:s0 tclass=property_service permissive=1'
+11-12 21:43:01.785   252   412 W displayd: xxxxxxx: performOptimalMode: hdmi mode user setting auto, try perfect modes
+11-12 21:43:01.785   252   412 W displayd: xxxxxxx: performOptimalMode: use perfect hdmi mode(10)
+11-12 21:43:01.922   246   402 D audio_hw_primary: get_audio_devices_active: AUDIO_CODEC,AUDIO_SPDIF,AUDIO_HDMI
+01-01 08:05:37.748   412   412 I [HDMI receive params]: tv mode: 0xa format:0x1 data bits:0x0 eotf:0x4 cs:0x101 dvi_hdmi:2 range:2 scan:0 aspect_ratio:8
+11-12 21:43:01.935   479   479 D AudioManagerEx: type audio_devices_out_active  list AUDIO_CODEC,AUDIO_SPDIF,AUDIO_HDMI=
+11-12 21:43:01.935   479   479 V AudioManagerPolicy: chengkan-------------   hdmi active
+11-12 21:43:01.949   256   281 D hdmi-cec: update hdmi connected: 1
+11-12 21:43:01.984   256   256 D hdmi-cec: reset logical address to broadcast
+11-12 21:43:03.023   256   256 D hdmi-cec: param.msg: 44-0-0-0-0, param.tx_status = 4
+11-12 21:43:03.023   479   639 W HDMI    : [1]:Failed to send a polling message(4->4) with return code 3
+11-12 21:43:03.119   252   412 I sunxihwc: switchDevice: display[1]: type=2 mode=0 enable=0
+11-12 21:43:03.119   252   412 I sunxihwc: switchDevice: display[0]: type=4 mode=10 enable=1
+11-12 21:43:03.119   252   412 D sunxihwc: setHotplugState: mbHotplug = 1
+11-12 21:43:03.119   252   412 D sunxihwc: setScreenSize: varW,h=1920,1080
+11-12 21:43:03.119   252   412 D sunxihwc: updateConnectedDevices: wb device 0x0 plugout! size=1
+11-12 21:43:03.119   252   412 I sunxihwc: updateConnectedDevices: display[0] connected=1 type=4 device=0xf4b1c60c
+11-12 21:43:03.120   252   412 I sunxihwc: updateConnectedDevices: display[1] connected=0 type=2 device=0x0
+11-12 21:43:03.121   252   412 D sunxihwc: enqueueEvent: enqueueEvent: event 1
+11-12 21:43:03.121   252   412 I sunxihwc: setMargin: display[0]: margin 100 100 100 100
+11-12 21:43:03.122   252   412 I sunxihwc: set3DMode: display[0]: mode=0
+01-01 08:05:38.940   412   412 I         : HDMI Audio Enable Successfully
+01-01 08:05:38.940   412   412 W type    : 4,mode:10,fmt:yuv444,bits:8bits,eotf:4,cs:257 dvi_hdmi:2, range:2 scan:0 ratio:8
+11-12 21:43:03.123   252   406 D sunxihwc: setHotplugState: mbHotplug = 0
+11-12 21:43:03.126   256   256 D hdmi-cec: param.msg: 44-0-0-0-0, param.tx_status = 2
+11-12 21:43:03.186   256   256 D hdmi-cec: param.msg: 44-0-0-0-0, param.tx_status = 2
+11-12 21:43:03.191   256   256 D hdmi-cec: cec physical address: 2.0.0.0
+11-12 21:43:03.192   256   256 D hdmi-cec: cec physical address: 2.0.0.0
+11-12 21:43:03.192   256   256 D hdmi-cec: cec physical address: 2.0.0.0
+11-12 21:43:03.193   256   256 D hdmi-cec: addLogicalAddress (4)
+11-12 21:43:03.193   256   256 D hdmi-cec: cec physical address: 2.0.0.0
+11-12 21:43:03.350   256   256 D hdmi-cec: param.msg: 4f-84-20-0-4, param.tx_status = 1
+11-12 21:43:03.510   256   256 D hdmi-cec: param.msg: 4f-87-76-93-94, param.tx_status = 1
+11-12 21:43:03.570   256   256 D hdmi-cec: param.msg: 40-47-54-39-35, param.tx_status = 2
+11-12 21:43:03.630   256   256 D hdmi-cec: param.msg: 40-47-54-39-35, param.tx_status = 2
+11-12 21:43:03.631   479   639 W HdmiCecController: Failed to send <Set Osd Name> 40:47 <Redacted len=6> with errorCode=1
+11-12 21:43:03.690   256   256 D hdmi-cec: param.msg: 45-7d-0-0-0, param.tx_status = 2
+11-12 21:43:03.750   256   256 D hdmi-cec: param.msg: 45-7d-0-0-0, param.tx_status = 2
+11-12 21:43:03.751   479   639 W HdmiCecController: Failed to send <Give System Audio Mode Status> 45:7D with errorCode=1
+11-12 21:43:21.629   252   252 W sunxihwc: computeLayerMemoryFootprint: Unknown pixelformat(-1)
+11-12 21:43:21.629   252   252 W sunxihwc: computeLayerMemoryFootprint: Unknown pixelformat(-1)
+11-12 21:43:25.468   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+11-12 21:43:25.468   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+11-12 21:43:42.186   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+11-12 21:43:42.186   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+11-12 21:43:48.251   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+11-12 21:43:48.251   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+11-12 21:43:56.450   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+11-12 21:43:56.451   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+11-12 21:44:16.628   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+11-12 21:44:16.628   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+11-12 21:44:18.914   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device VINTF manifest.
+11-12 21:44:18.956   266   315 E HWComposer: getSupportedContentTypes: getSupportedContentTypes failed for display 0: Unsupported (8)
+11-12 21:44:21.128   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+11-12 21:44:21.129   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+11-12 21:44:30.392   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+11-12 21:44:30.392   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+11-12 21:44:36.072   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+11-12 21:44:36.073   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+11-12 21:44:41.732   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+11-12 21:44:41.732   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+11-12 21:44:55.936   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+11-12 21:44:55.936   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+11-12 21:45:05.699   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+11-12 21:45:05.700   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+11-12 21:45:19.624   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+11-12 21:45:19.624   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+11-12 21:45:28.528   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+11-12 21:45:28.529   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+11-12 21:46:34.613   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+11-12 21:46:34.613   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+11-12 21:46:52.939   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+11-12 21:46:52.939   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+11-12 21:46:56.756   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device VINTF manifest.
+11-12 21:46:56.789   266   576 E HWComposer: getSupportedContentTypes: getSupportedContentTypes failed for display 0: Unsupported (8)
+11-12 21:47:27.864   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+11-12 21:47:27.864   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+11-12 21:47:39.890   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+11-12 21:47:39.890   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+11-12 21:47:45.762   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+11-12 21:47:45.763   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+11-12 21:48:14.059   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+11-12 21:48:14.059   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+11-12 21:48:25.523   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+11-12 21:48:25.523   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+11-12 21:48:31.859   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+11-12 21:48:31.859   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+11-12 21:48:39.982   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+11-12 21:48:39.983   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+11-12 21:48:45.769   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+11-12 21:48:45.770   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+11-12 21:51:10.548   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+11-12 21:51:10.549   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+11-12 21:51:13.796   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+11-12 21:51:13.796   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+11-12 21:53:13.288   246   633 V audio_hw_primary: use AUDIO_HDMI to playback audio
+11-12 21:53:13.288   246   633 D audio_hw_primary: set_raw_flag control_name = hdmi audio format Function)
+11-12 22:04:48.540   266   266 I auditd  : type=1400 audit(0.0:724): avc: denied { search } for comm="Binder:266_4" name="252" dev="proc" ino=50105 scontext=u:r:surfaceflinger:s0 tcontext=u:r:hal_graphics_composer_default:s0 tclass=dir permissive=1
+11-12 22:04:48.540   266   266 I Binder:266_4: type=1400 audit(0.0:724): avc: denied { search } for name="252" dev="proc" ino=50105 scontext=u:r:surfaceflinger:s0 tcontext=u:r:hal_graphics_composer_default:s0 tclass=dir permissive=1
+11-12 22:04:48.540   266   266 I auditd  : type=1400 audit(0.0:725): avc: denied { read } for comm="Binder:266_4" name="cmdline" dev="proc" ino=56740 scontext=u:r:surfaceflinger:s0 tcontext=u:r:hal_graphics_composer_default:s0 tclass=file permissive=1
+11-12 22:04:48.540   266   266 I Binder:266_4: type=1400 audit(0.0:725): avc: denied { read } for name="cmdline" dev="proc" ino=56740 scontext=u:r:surfaceflinger:s0 tcontext=u:r:hal_graphics_composer_default:s0 tclass=file permissive=1
+11-12 22:04:48.540   266   266 I auditd  : type=1400 audit(0.0:726): avc: denied { open } for comm="Binder:266_4" path="/proc/252/cmdline" dev="proc" ino=56740 scontext=u:r:surfaceflinger:s0 tcontext=u:r:hal_graphics_composer_default:s0 tclass=file permissive=1
+11-12 22:04:48.540   266   266 I Binder:266_4: type=1400 audit(0.0:726): avc: denied { open } for path="/proc/252/cmdline" dev="proc" ino=56740 scontext=u:r:surfaceflinger:s0 tcontext=u:r:hal_graphics_composer_default:s0 tclass=file permissive=1
+11-12 22:04:48.540   266   266 I auditd  : type=1400 audit(0.0:727): avc: denied { getattr } for comm="Binder:266_4" path="/proc/252/cmdline" dev="proc" ino=56740 scontext=u:r:surfaceflinger:s0 tcontext=u:r:hal_graphics_composer_default:s0 tclass=file permissive=1
+11-12 22:04:48.540   266   266 I Binder:266_4: type=1400 audit(0.0:727): avc: denied { getattr } for path="/proc/252/cmdline" dev="proc" ino=56740 scontext=u:r:surfaceflinger:s0 tcontext=u:r:hal_graphics_composer_default:s0 tclass=file permissive=1

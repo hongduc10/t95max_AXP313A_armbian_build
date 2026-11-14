@@ -1,0 +1,4 @@
+===== 67_audio_log =====
+Command: dmesg | grep -Ei 'audio|sound|codec|hdmi.*audio|i2s|spdif|snd'
+
+[ 1643.011880] [  T192] type=1400 audit(1794492289.380:728): avc: denied { search } for comm="cat" name="asound" dev="proc" ino=4026532016 scontext=u:r:shell:s0 tcontext=u:object_r:proc_asound:s0 tclass=dir permissive=1

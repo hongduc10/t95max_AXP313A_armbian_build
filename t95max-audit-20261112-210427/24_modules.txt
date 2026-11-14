@@ -1,0 +1,12 @@
+===== 24_modules =====
+Command: cat /proc/modules
+
+bcmdhd 1236992 0 - Live 0x0000000000000000
+sunxi_usbc 36864 0 - Live 0x0000000000000000
+ohci_sunxi 28672 1 sunxi_usbc, Live 0x0000000000000000
+ehci_sunxi 28672 1 sunxi_usbc, Live 0x0000000000000000
+sunxi_hci 49152 2 ohci_sunxi,ehci_sunxi, Live 0x0000000000000000
+bcm_btlpm 24576 0 - Live 0x0000000000000000
+h6_fd655 24576 1 - Live 0x0000000000000000
+mali_kbase 557056 11 - Live 0x0000000000000000 (O)
+sunxi_rfkill 36864 1 bcmdhd, Live 0x0000000000000000

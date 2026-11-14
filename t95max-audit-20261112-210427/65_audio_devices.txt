@@ -1,0 +1,39 @@
+===== 65_audio_devices =====
+Command: ls -lR /dev/snd /sys/class/sound 2>/dev/null
+
+/dev/snd:
+total 0
+crw-rw---- 1 system audio 116,   0 1970-01-01 08:00 controlC0
+crw-rw---- 1 system audio 116,  32 1970-01-01 08:00 controlC1
+crw-rw---- 1 system audio 116,  64 1970-01-01 08:00 controlC2
+crw-rw---- 1 system audio 116,  96 1970-01-01 08:00 controlC3
+crw-rw---- 1 system audio 116, 128 1970-01-01 08:00 controlC4
+crw-rw---- 1 system audio 116,  16 1970-01-01 08:00 pcmC0D0p
+crw-rw---- 1 system audio 116,  56 1970-01-01 08:00 pcmC1D0c
+crw-rw---- 1 system audio 116,  48 1970-01-01 08:00 pcmC1D0p
+crw-rw---- 1 system audio 116, 120 1970-01-01 08:00 pcmC3D0c
+crw-rw---- 1 system audio 116, 112 1970-01-01 08:00 pcmC3D0p
+crw-rw---- 1 system audio 116, 152 1970-01-01 08:00 pcmC4D0c
+crw-rw---- 1 system audio 116, 144 1970-01-01 08:00 pcmC4D0p
+crw-rw---- 1 system audio 116,  33 1970-01-01 08:00 timer
+
+/sys/class/sound:
+total 0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 card0 -> ../../devices/platform/soc@3000000/soc@3000000:codec_mach/sound/card0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 card1 -> ../../devices/platform/soc@3000000/soc@3000000:spdif_mach/sound/card1
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 card2 -> ../../devices/platform/soc@3000000/soc@3000000:ahub_dam_mach/sound/card2
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 card3 -> ../../devices/platform/soc@3000000/soc@3000000:ahub1_mach/sound/card3
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 card4 -> ../../devices/platform/soc@3000000/soc@3000000:ahub2_mach/sound/card4
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 controlC0 -> ../../devices/platform/soc@3000000/soc@3000000:codec_mach/sound/card0/controlC0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 controlC1 -> ../../devices/platform/soc@3000000/soc@3000000:spdif_mach/sound/card1/controlC1
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 controlC2 -> ../../devices/platform/soc@3000000/soc@3000000:ahub_dam_mach/sound/card2/controlC2
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 controlC3 -> ../../devices/platform/soc@3000000/soc@3000000:ahub1_mach/sound/card3/controlC3
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 controlC4 -> ../../devices/platform/soc@3000000/soc@3000000:ahub2_mach/sound/card4/controlC4
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 pcmC0D0p -> ../../devices/platform/soc@3000000/soc@3000000:codec_mach/sound/card0/pcmC0D0p
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 pcmC1D0c -> ../../devices/platform/soc@3000000/soc@3000000:spdif_mach/sound/card1/pcmC1D0c
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 pcmC1D0p -> ../../devices/platform/soc@3000000/soc@3000000:spdif_mach/sound/card1/pcmC1D0p
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 pcmC3D0c -> ../../devices/platform/soc@3000000/soc@3000000:ahub1_mach/sound/card3/pcmC3D0c
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 pcmC3D0p -> ../../devices/platform/soc@3000000/soc@3000000:ahub1_mach/sound/card3/pcmC3D0p
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 pcmC4D0c -> ../../devices/platform/soc@3000000/soc@3000000:ahub2_mach/sound/card4/pcmC4D0c
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 pcmC4D0p -> ../../devices/platform/soc@3000000/soc@3000000:ahub2_mach/sound/card4/pcmC4D0p
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 timer -> ../../devices/virtual/sound/timer

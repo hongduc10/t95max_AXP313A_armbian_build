@@ -1,0 +1,3 @@
+===== 54_clocks =====
+Command: ls -lR /sys/kernel/debug/clk 2>/dev/null
+

@@ -1,0 +1,16 @@
+===== 53_gpio =====
+Command: ls -lR /sys/class/gpio /sys/bus/platform/drivers/gpio* 2>/dev/null
+
+/sys/bus/platform/drivers/gpio-clk:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/gpio_sw:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 gpio_sw.0 -> ../../../../devices/platform/gpio_sw.0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 gpio_sw.1 -> ../../../../devices/platform/gpio_sw.1
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind

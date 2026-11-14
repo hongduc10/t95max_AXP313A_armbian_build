@@ -1,0 +1,362 @@
+===== 26_kernel_log =====
+Command: dmesg
+
+[  607.106700] [    C0] sunxi-mmc 4021000.sdmmc: smc 2 p1 err, cmd 52, RTO !!
+[  607.114388] [  T655] sunxi-mmc 4021000.sdmmc: sdc set ios:clk 400000Hz bm PP pm ON vdd 23 width 1 timing LEGACY(SDR12) dt B
+[  607.118238] [  T655] sunxi-mmc 4021000.sdmmc: sdc set ios:clk 400000Hz bm PP pm ON vdd 23 width 1 timing LEGACY(SDR12) dt B
+[  607.146167] [    C0] sunxi-mmc 4021000.sdmmc: smc 2 p1 err, cmd 8, RTO !!
+[  607.183116] [  T655] mmc2: queuing unknown CIS tuple 0x41 (49 bytes)
+[  607.199227] [  T655] mmc2: queuing unknown CIS tuple 0x80 (7 bytes)
+[  607.248019] [  T655] sunxi-mmc 4021000.sdmmc: sdc set ios:clk 400000Hz bm PP pm ON vdd 23 width 4 timing LEGACY(SDR12) dt B
+[  607.276864] [  T655] sunxi-mmc 4021000.sdmmc: sdc set ios:clk 400000Hz bm PP pm ON vdd 23 width 4 timing UHS-DDR50 dt B
+[  607.276966] [  T655] sunxi-mmc 4021000.sdmmc: sdc set ios:clk 50000000Hz bm PP pm ON vdd 23 width 4 timing UHS-DDR50 dt B
+[  607.277348] [  T655] sdioh_start: set sd_f2_blocksize 256
+[  607.279343] [  T655] 
+[  607.279343] [  T655] 
+[  607.279343] [  T655] dhd_bus_devreset: == WLAN ON ==
+[  607.279926] [  T655] F1 signature read @0x18000000=0x1601a94e
+[  607.287172] [  T655] F1 signature OK, socitype:0x1 chip:0xa94e rev:0x1 pkg:0x0
+[  607.288252] [  T655] DHD: dongle ram size is set to 524288(orig 524288) at 0x0
+[  607.289413] [  T655] dhd_bus_set_default_min_res_mask: Unhandled chip id
+[  607.289942] [  T655] dhd_os_open_image: /vendor/etc/firmware/config_bcm43342.txt (8 bytes) open success
+[  607.290000] [  T655] dhd_conf_read_others: ccode = US
+[  607.290037] [  T655] Final fw_path=/vendor/etc/firmware/fw_bcm43342_ag.bin
+[  607.290044] [  T655] Final nv_path=/vendor/etc/firmware/nvram_bcm43342.txt
+[  607.290052] [  T655] Final clm_path=/vendor/etc/firmware/clm.blob
+[  607.290059] [  T655] Final conf_path=/vendor/etc/firmware/config_bcm43342.txt
+[  607.291314] [  T655] dhd_os_open_image: /vendor/etc/firmware/fw_bcm43342_ag.bin (361772 bytes) open success
+[  607.371679] [  T655] dhd_os_open_image: /vendor/etc/firmware/nvram_bcm43342.txt (2443 bytes) open success
+[  607.371783] [  T655] NVRAM version: Turning RF 2019/12/02 by Aiden
+[  607.372607] [  T655] dhdsdio_write_vars: Download, Upload and compare of NVRAM succeeded.
+[  607.483957] [  T655] dhd_bus_init: enable 0x06, ready 0x06 (waited 0us)
+[  607.484035] [  T655] si_get_pmu_reg_addr: addrRET: 1800064c
+[  607.484081] [  T655] si_get_pmu_reg_addr: addrRET: 18000670
+[  607.484322] [  T655] bcmsdh_oob_intr_register: HW_OOB irq=234 flags=0x4
+[  607.484834] [  T655] dhd_get_memdump_info: File [/data/misc/wifi/.memdump.info] doesn't exist
+[  607.484873] [  T655] dhd_get_memdump_info: MEMDUMP ENABLED = 2
+[  607.485655] [  T192] type=1400 audit(1794491253.856:294): avc: denied { search } for comm="wifi@1.0-servic" name="wifi" dev="mmcblk0p25" ino=54 scontext=u:r:hal_wifi_default:s0 tcontext=u:object_r:wifi_data_file:s0 tclass=dir permissive=1
+[  607.486703] [  T655] Disable tdls_auto_op failed. -1
+[  607.486714] [  T655] dhd_tcpack_suppress_set 362: already set to 0
+[  607.487455] [  T655] dhd_apply_default_clm: Ignore clm file /vendor/etc/firmware/clm.blob
+[  607.490910] [  T655] Firmware up: op_mode=0x0005, MAC=94:a1:a2:1a:22:0b
+[  607.495393] [  T655] dhd_preinit_ioctls Set scancache failed -23
+[  607.498386] [  T655] dhd_preinit_ioctls event_msgs_ext not support or version mismatch -37
+[  607.501359] [  T655] dhd_wl_ioctl_get_intiovar: get int iovar arp_version failed, ERR -23
+[  607.508545] [  T655]   Driver: 1.579.77.41.11 (r)
+[  607.508545] [  T655]   Firmware: wl0: Oct 18 2016 17:43:42 version 6.25.134.25 (r662387) FWID 01-281dd9d9
+[  607.508545] [  T655]   CLM: 6.1.8 
+[  607.509069] [  T655] dhd_txglom_enable: enable 0
+[  607.509078] [  T655] dhd_conf_set_txglom_params: txglom_mode=multi-desc
+[  607.509086] [  T655] dhd_conf_set_txglom_params: txglomsize=0, deferred_tx_len=0
+[  607.509094] [  T655] dhd_conf_set_txglom_params: txinrx_thres=-1, dhd_txminmax=1
+[  607.509102] [  T655] dhd_conf_set_txglom_params: tx_max_offset=0, txctl_tmo_fix=300
+[  607.509120] [  T655] dhd_conf_get_disable_proptx: fw_proptx=0, disable_proptx=1
+[  607.510518] [  T655] dhd_preinit_ioctls wl ampdu_hostreorder failed -23
+[  607.569011] [  T655] rtt_do_get_ioctl: failed to send getbuf proxd iovar (CMD ID : 1), status=-23
+[  607.569023] [  T655] dhd_rtt_init : FTM is not supported
+[  607.569033] [  T655] dhd_preinit_ioctls: SensorHub diabled 0
+[  607.569969] [  T655] dhd_preinit_ioctls failed to set ShubHub disable
+[  607.570883] [  T655] dhd_ndo_get_version: failed, retcode = -23
+[  607.572024] [  T655] dhd_wl_ioctl_get_intiovar: get int iovar wnm_bsstrans_resp failed, ERR -23
+[  607.572031] [  T655] failed to get wnm_bsstrans_resp
+[  607.572860] [  T655] failed to set WNM capabilities
+[  607.573331] [  T655] dhd_conf_set_country: set country US, revision 0
+[  607.578917] [  T655] Country code: US (US/0)
+[  607.586027] [  T655] wl_android_wifi_on: Success
+[  607.646183] [  T655] CFG80211-ERROR) __wl_update_wiphybands : 
+[  607.646199] [  T655] error reading vhtmode (-23)
+[  607.682300] [  T655] wl_escan_init: Enter
+[  607.682581] [  T655] wl_create_event_handler(): thread:wl_escan_handler:ab4 started
+[  607.682608] [ T2740] tsk Enter, tsk = 0x00000000b83aa926
+[  607.682611] [  T655] dhd_open : the lock is released.
+[  607.682617] [  T655] dhd_open: Exit ret=0
+[  607.749304] [    T1] init: starting service 'wpa_supplicant'...
+[  607.764513] [    T1] init: Created socket '/dev/socket/wpa_wlan0', mode 660, user 1010, group 1010
+[  607.775698] [    T1] init: Control message: Processed ctl.interface_start for 'android.hardware.wifi.supplicant@1.0::ISupplicant/default' from pid: 179 (/system/bin/hwservicemanager)
+[  608.093708] [  T192] type=1400 audit(1794491254.464:295): avc: denied { read } for comm="FD655_Demo" name="vpause_flag" dev="sysfs" ino=24579 scontext=u:r:shell:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[  608.094187] [  T192] type=1400 audit(1794491254.464:296): avc: denied { open } for comm="FD655_Demo" path="/sys/class/fd655/vpause_flag" dev="sysfs" ino=24579 scontext=u:r:shell:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[  608.155814] [ T2743] P2P interface registered
+[  608.155836] [ T2743] wl_cfgp2p_add_p2p_disc_if: wdev: 00000000f119e06c, wdev->net: 0000000000000000
+[  608.178791] [ T2737] WLC_E_IF: NO_IF set, event Ignored
+[  608.181204] [ T2743] P2P interface started
+[  608.261693] [ T2743] dhd_set_suspend: force extra suspend setting
+[  608.262344] [ T2743] dhd_enable_packet_filter: enter, value = 1
+[  608.296610] [  T655] dhd_dbg_attach_pkt_monitor, 1606
+[  608.316612] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 0, bssidx: 0
+[  608.334849] [ T2743] net_os_enable_packet_filter: val = 0
+[  608.334861] [ T2743] dhd_enable_packet_filter: enter, value = 0
+[  608.342637] [ T2743] net_os_rxfilter_add_remove: add_remove = 0, num = 2
+[  608.343437] [ T2743] net_os_enable_packet_filter: val = 1
+[  608.343440] [ T2743] dhd_enable_packet_filter: enter, value = 1
+[  608.350037] [ T2743] net_os_enable_packet_filter: val = 0
+[  608.350042] [ T2743] dhd_enable_packet_filter: enter, value = 0
+[  608.356447] [ T2743] net_os_rxfilter_add_remove: add_remove = 0, num = 3
+[  608.357226] [ T2743] net_os_enable_packet_filter: val = 1
+[  608.357229] [ T2743] dhd_enable_packet_filter: enter, value = 1
+[  608.363280] [ T2743] dhd_set_suspend: force extra suspend setting
+[  608.363928] [ T2743] dhd_enable_packet_filter: enter, value = 1
+[  608.402328] [ T2743] dhd_set_suspend: Remove extra suspend setting 
+[  608.407105] [ T2743] dhd_enable_packet_filter: enter, value = 0
+[  612.082543] [ T2743] Connecting with b0:d1:d6:92:ff:fd ssid "VN 5G", len (5) channel=161
+[  612.082543] [ T2743] 
+[  612.088108] [ T2743] dhd_dbg_start_pkt_monitor, 1724
+[  612.088126] [ T2743] __dhd_dbg_free_tx_pkts, 1518
+[  612.088129] [ T2743] __dhd_dbg_free_rx_pkts, 1536
+[  612.152929] [ T2737] wl_iw_event: Link UP with b0:d1:d6:92:ff:fd
+[  612.153017] [  T136] wl_bss_connect_done succeeded with b0:d1:d6:92:ff:fd 
+[  612.279298] [ T2743] CFG80211-ERROR) wl_cfg80211_add_key : 
+[  612.279306] [ T2743] WLC_SET_KEY error (-8)
+[  612.280216] [ T2743] CFG80211-ERROR) wl_cfg80211_disconnect : 
+[  612.280222] [ T2743] Reason 1
+[  612.280236] [ T2743] dhd_dbg_stop_pkt_monitor, 1963
+[  612.281297] [ T2737] wl_iw_event: disconnected with b0:d1:d6:92:ff:fd, event 11, reason 8
+[  612.281421] [ T2737] wl_iw_event: Link Down with b0:d1:d6:92:ff:fd, reason=2
+[  612.281514] [  T136] CFG80211-ERROR) wl_is_linkdown : 
+[  612.281517] [  T136] Link down Reason : WLC_E_LINK
+[  612.281577] [  T136] link down if wlan0 may call cfg80211_disconnected. event : 16, reason=2 from b0:d1:d6:92:ff:fd
+[  612.281581] [  T136] dhd_dbg_stop_pkt_monitor, 1963
+[  612.529618] [  T948] CFG80211-ERROR) wl_cfg80211_del_key : 
+[  612.529624] [  T948] WLC_SET_KEY error (-8)
+[  612.530266] [  T948] CFG80211-ERROR) wl_cfg80211_del_key : 
+[  612.530269] [  T948] WLC_SET_KEY error (-8)
+[  612.614661] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 1, bssidx: 0
+[  613.683934] [  T192] type=1400 audit(1794491260.052:297): avc: denied { search } for comm="EventThread" name="extcon" dev="sysfs" ino=18015 scontext=u:r:hal_tv_cec_default:s0 tcontext=u:object_r:sysfs_extcon:s0 tclass=dir permissive=1
+[  613.696703] [  T192] type=1400 audit(1794491260.068:298): avc: denied { call } for comm="Thread-24" scontext=u:r:system_server:s0 tcontext=u:r:hal_awdisplayoutput_default:s0 tclass=binder permissive=1
+[  616.196275] [ T2743] Connecting with b0:d1:d6:92:ff:f9 ssid "VN", len (2) channel=1
+[  616.196275] [ T2743] 
+[  616.202193] [ T2743] dhd_dbg_start_pkt_monitor, 1724
+[  616.202210] [ T2743] __dhd_dbg_free_tx_pkts, 1518
+[  616.202217] [ T2743] __dhd_dbg_free_rx_pkts, 1536
+[  616.326741] [ T2737] wl_iw_event: Link UP with b0:d1:d6:92:ff:f9
+[  616.326893] [  T136] wl_bss_connect_done succeeded with b0:d1:d6:92:ff:f9 
+[  616.449292] [ T2743] CFG80211-ERROR) wl_cfg80211_add_key : 
+[  616.449300] [ T2743] WLC_SET_KEY error (-8)
+[  616.449748] [ T2743] CFG80211-ERROR) wl_cfg80211_disconnect : 
+[  616.449753] [ T2743] Reason 1
+[  616.449765] [ T2743] dhd_dbg_stop_pkt_monitor, 1963
+[  616.451431] [ T2737] wl_iw_event: disconnected with b0:d1:d6:92:ff:f9, event 11, reason 8
+[  616.451543] [ T2737] wl_iw_event: Link Down with b0:d1:d6:92:ff:f9, reason=2
+[  616.451620] [  T136] CFG80211-ERROR) wl_is_linkdown : 
+[  616.451623] [  T136] Link down Reason : WLC_E_LINK
+[  616.451644] [  T136] link down if wlan0 may call cfg80211_disconnected. event : 16, reason=2 from b0:d1:d6:92:ff:f9
+[  616.451648] [  T136] dhd_dbg_stop_pkt_monitor, 1963
+[  616.697143] [    T7] CFG80211-ERROR) wl_cfg80211_del_key : 
+[  616.697155] [    T7] WLC_SET_KEY error (-8)
+[  616.697949] [    T7] CFG80211-ERROR) wl_cfg80211_del_key : 
+[  616.697954] [    T7] WLC_SET_KEY error (-8)
+[  616.788465] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 2, bssidx: 0
+[  620.515689] [ T2743] Connecting with b0:d1:d6:92:ff:f9 ssid "VN", len (2) channel=1
+[  620.515689] [ T2743] 
+[  620.516407] [ T2743] dhd_dbg_start_pkt_monitor, 1724
+[  620.516413] [ T2743] __dhd_dbg_free_tx_pkts, 1518
+[  620.516416] [ T2743] __dhd_dbg_free_rx_pkts, 1536
+[  620.543076] [  T136] connect failed event=0 e->status 1 e->reason 0 
+[  620.543090] [  T136] CFG80211-ERROR) wl_cfg80211_check_in4way : 
+[  620.543093] [  T136] WPA failed at 13
+[  620.544564] [  T136] CFG80211-ERROR) wl_bss_connect_done : 
+[  620.544570] [  T136] Report connect result - connection failed
+[  620.643533] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 3, bssidx: 0
+[  620.689826] [  T187] logd: logdr: UID=1000 GID=1000 PID=2802 n tail=127 logMask=19 pid=0 start=0ns deadline=0ns
+[  620.807059] [  T187] logd: logdr: UID=1000 GID=1000 PID=2805 n tail=127 logMask=80 pid=0 start=0ns deadline=0ns
+[  624.512598] [ T2743] Connecting with b0:d1:d6:92:ff:fd ssid "VN 5G", len (5) channel=161
+[  624.512598] [ T2743] 
+[  624.519794] [ T2743] dhd_dbg_start_pkt_monitor, 1724
+[  624.519804] [ T2743] __dhd_dbg_free_tx_pkts, 1518
+[  624.519808] [ T2743] __dhd_dbg_free_rx_pkts, 1536
+[  624.583380] [ T2737] wl_iw_event: Link UP with b0:d1:d6:92:ff:fd
+[  624.583513] [ T1416] wl_bss_connect_done succeeded with b0:d1:d6:92:ff:fd 
+[  624.704816] [ T2743] CFG80211-ERROR) wl_cfg80211_add_key : 
+[  624.704825] [ T2743] WLC_SET_KEY error (-8)
+[  624.705732] [ T2743] CFG80211-ERROR) wl_cfg80211_disconnect : 
+[  624.705739] [ T2743] Reason 1
+[  624.705759] [ T2743] dhd_dbg_stop_pkt_monitor, 1963
+[  624.706939] [ T2737] wl_iw_event: disconnected with b0:d1:d6:92:ff:fd, event 11, reason 8
+[  624.707141] [ T2737] wl_iw_event: Link Down with b0:d1:d6:92:ff:fd, reason=2
+[  624.707263] [ T1416] CFG80211-ERROR) wl_is_linkdown : 
+[  624.707269] [ T1416] Link down Reason : WLC_E_LINK
+[  624.707352] [ T1416] link down if wlan0 may call cfg80211_disconnected. event : 16, reason=2 from b0:d1:d6:92:ff:fd
+[  624.707360] [ T1416] dhd_dbg_stop_pkt_monitor, 1963
+[  624.952413] [ T2782] CFG80211-ERROR) wl_cfg80211_del_key : 
+[  624.952421] [ T2782] WLC_SET_KEY error (-8)
+[  624.953238] [ T2782] CFG80211-ERROR) wl_cfg80211_del_key : 
+[  624.953243] [ T2782] WLC_SET_KEY error (-8)
+[  625.028215] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 4, bssidx: 0
+[  628.743208] [ T2743] Connecting with b0:d1:d6:92:ff:fd ssid "VN 5G", len (5) channel=161
+[  628.743208] [ T2743] 
+[  628.748254] [ T2743] dhd_dbg_start_pkt_monitor, 1724
+[  628.748264] [ T2743] __dhd_dbg_free_tx_pkts, 1518
+[  628.748267] [ T2743] __dhd_dbg_free_rx_pkts, 1536
+[  628.808069] [  T166] connect failed event=0 e->status 1 e->reason 0 
+[  628.808085] [  T166] CFG80211-ERROR) wl_cfg80211_check_in4way : 
+[  628.808089] [  T166] WPA failed at 13
+[  628.809223] [  T166] CFG80211-ERROR) wl_bss_connect_done : 
+[  628.809230] [  T166] Report connect result - connection failed
+[  628.856543] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 5, bssidx: 0
+[  628.859235] [  T187] logd: logdr: UID=1000 GID=1000 PID=2809 n tail=127 logMask=19 pid=0 start=0ns deadline=0ns
+[  628.986617] [  T187] logd: logdr: UID=1000 GID=1000 PID=2811 n tail=127 logMask=80 pid=0 start=0ns deadline=0ns
+[  639.831527] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 6, bssidx: 0
+[  649.839971] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 7, bssidx: 0
+[  654.354068] [  T192] type=1400 audit(1794491300.724:299): avc: denied { read } for comm="FD655_Demo" name="vpause_flag" dev="sysfs" ino=24579 scontext=u:r:shell:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[  654.355940] [  T192] type=1400 audit(1794491300.724:300): avc: denied { open } for comm="FD655_Demo" path="/sys/class/fd655/vpause_flag" dev="sysfs" ino=24579 scontext=u:r:shell:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[  656.153180] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 8, bssidx: 0
+[  663.897589] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 9, bssidx: 0
+[  672.139324] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 10, bssidx: 0
+[  683.989048] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 11, bssidx: 0
+[  693.994959] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 12, bssidx: 0
+[  704.004579] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 13, bssidx: 0
+[  714.014437] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 14, bssidx: 0
+[  724.022877] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 15, bssidx: 0
+[  733.902745] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 16, bssidx: 0
+[  744.038810] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 17, bssidx: 0
+[  754.043751] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 18, bssidx: 0
+[  764.053694] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 19, bssidx: 0
+[  774.065104] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 20, bssidx: 0
+[  784.072096] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 21, bssidx: 0
+[  794.082227] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 22, bssidx: 0
+[  804.092148] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 23, bssidx: 0
+[  814.092404] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 24, bssidx: 0
+[  824.096507] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 25, bssidx: 0
+[  843.807231] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 26, bssidx: 0
+[  847.296154] [ T2743] wl_run_escan: LEGACY_SCAN sync ID: 27, bssidx: 0
+[  853.818996] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 28, bssidx: 0
+[  857.274581] [ T2743] wl_run_escan: LEGACY_SCAN sync ID: 29, bssidx: 0
+[  863.828581] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 30, bssidx: 0
+[  867.368198] [ T2743] wl_run_escan: LEGACY_SCAN sync ID: 31, bssidx: 0
+[  870.904180] [ T2743] Connecting with 96:76:4d:d4:b3:fc ssid "VN1", len (3) channel=6
+[  870.904180] [ T2743] 
+[  870.912357] [ T2743] dhd_dbg_start_pkt_monitor, 1724
+[  870.912372] [ T2743] __dhd_dbg_free_tx_pkts, 1518
+[  870.912379] [ T2743] __dhd_dbg_free_rx_pkts, 1536
+[  871.022392] [ T2737] wl_iw_event: Link UP with 96:76:4d:d4:b3:fc
+[  871.022476] [ T1416] wl_bss_connect_done succeeded with 96:76:4d:d4:b3:fc 
+[  871.207753] [  T655] dhd_dev_apf_get_version: firmware doesn't support APF
+[  871.207775] [  T655] dhd_dev_apf_get_max_len: firmware doesn't support APF
+[  871.255014] [  T192] type=1400 audit(1794491517.624:301): avc: denied { call } for comm="Thread-24" scontext=u:r:system_server:s0 tcontext=u:r:hal_awdisplayoutput_default:s0 tclass=binder permissive=1
+[  871.289944] [ T2743] net_os_enable_packet_filter: val = 0
+[  871.290544] [ T2743] net_os_rxfilter_add_remove: add_remove = 1, num = 2
+[  871.291555] [ T2743] net_os_enable_packet_filter: val = 1
+[  871.375493] [ T2743] dhd_set_suspend: Remove extra suspend setting 
+[  871.376137] [ T2743] dhd_enable_packet_filter: enter, value = 0
+[  871.563243] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 32, bssidx: 0
+[  871.645151] [  T192] type=1400 audit(1794491518.016:302): avc: denied { search } for comm="EventThread" name="extcon" dev="sysfs" ino=18015 scontext=u:r:hal_tv_cec_default:s0 tcontext=u:object_r:sysfs_extcon:s0 tclass=dir permissive=1
+[  872.026627] [   T35] binder: undelivered transaction 382784, process died.
+[  872.026639] [   T35] binder: undelivered transaction 382956, process died.
+[  872.026644] [   T35] binder: undelivered transaction 384432, process died.
+[  872.027054] [   T35] binder: undelivered transaction 382569, process died.
+[  872.187920] [  T192] type=1400 audit(1794491518.556:303): avc: denied { search } for comm=4173796E635461736B202331 name="com.sunvell.update" dev="mmcblk0p25" ino=702 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=1 app=com.sunvell.update
+[  872.663668] [  T192] type=1400 audit(1794491519.032:304): avc: denied { read } for comm="FD655_Demo" name="vpause_flag" dev="sysfs" ino=24579 scontext=u:r:shell:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[  872.663991] [  T192] type=1400 audit(1794491519.032:305): avc: denied { open } for comm="FD655_Demo" path="/sys/class/fd655/vpause_flag" dev="sysfs" ino=24579 scontext=u:r:shell:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[  873.811779] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 33, bssidx: 0
+[  881.833130] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 34, bssidx: 0
+[  891.651856] [ T2486] sunxi-gmac 5030000.eth eth0: Link is Down
+[  891.853191] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 35, bssidx: 0
+[  901.846201] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 36, bssidx: 0
+[  902.871329] [  T192] type=1400 audit(1794491549.240:306): avc: denied { call } for comm="Thread-24" scontext=u:r:system_server:s0 tcontext=u:r:hal_awdisplayoutput_default:s0 tclass=binder permissive=1
+[  906.576665] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 37, bssidx: 0
+[  911.868716] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 38, bssidx: 0
+[  915.721662] [  T192] type=1400 audit(1794491562.092:307): avc: denied { search } for comm="EventThread" name="extcon" dev="sysfs" ino=18015 scontext=u:r:hal_tv_cec_default:s0 tcontext=u:object_r:sysfs_extcon:s0 tclass=dir permissive=1
+[  921.871381] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 39, bssidx: 0
+[  931.907311] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 40, bssidx: 0
+[  941.915108] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 41, bssidx: 0
+[  947.319753] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 42, bssidx: 0
+[  957.338696] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 43, bssidx: 0
+[  967.349704] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 44, bssidx: 0
+[  976.581647] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 45, bssidx: 0
+[  977.359924] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 46, bssidx: 0
+[  987.367881] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 47, bssidx: 0
+[  997.376960] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 48, bssidx: 0
+[ 1007.382502] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 49, bssidx: 0
+[ 1017.393855] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 50, bssidx: 0
+[ 1027.403990] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 51, bssidx: 0
+[ 1037.411684] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 52, bssidx: 0
+[ 1047.420311] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 53, bssidx: 0
+[ 1057.431332] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 54, bssidx: 0
+[ 1067.443458] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 55, bssidx: 0
+[ 1077.447451] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 56, bssidx: 0
+[ 1087.458117] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 57, bssidx: 0
+[ 1097.465446] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 58, bssidx: 0
+[ 1107.472275] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 59, bssidx: 0
+[ 1116.589520] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 60, bssidx: 0
+[ 1117.480399] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 61, bssidx: 0
+[ 1127.485586] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 62, bssidx: 0
+[ 1137.497229] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 63, bssidx: 0
+[ 1147.499512] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 64, bssidx: 0
+[ 1157.510285] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 65, bssidx: 0
+[ 1160.398403] [ T2913] usb 5-1: USB disconnect, device number 2
+[ 1167.521347] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 66, bssidx: 0
+[ 1177.525990] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 67, bssidx: 0
+[ 1187.537290] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 68, bssidx: 0
+[ 1197.548406] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 69, bssidx: 0
+[ 1207.552546] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 70, bssidx: 0
+[ 1215.428118] [  T192] type=1400 audit(1794491861.796:308): avc: denied { read } for comm="FD655_Demo" name="vpause_flag" dev="sysfs" ino=24579 scontext=u:r:shell:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1215.428624] [  T192] type=1400 audit(1794491861.796:309): avc: denied { open } for comm="FD655_Demo" path="/sys/class/fd655/vpause_flag" dev="sysfs" ino=24579 scontext=u:r:shell:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1217.571933] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 71, bssidx: 0
+[ 1227.578170] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 72, bssidx: 0
+[ 1237.584845] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 73, bssidx: 0
+[ 1247.594041] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 74, bssidx: 0
+[ 1257.600880] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 75, bssidx: 0
+[ 1267.610248] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 76, bssidx: 0
+[ 1277.619467] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 77, bssidx: 0
+[ 1287.628325] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 78, bssidx: 0
+[ 1297.637039] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 79, bssidx: 0
+[ 1307.648731] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 80, bssidx: 0
+[ 1312.986852] [  T192] type=1400 audit(1794491959.356:310): avc: denied { search } for comm=73796E6320737663203439 name="/" dev="mmcblk0p23" ino=1 scontext=u:r:adbd:s0 tcontext=u:object_r:oemfs:s0 tclass=dir permissive=1
+[ 1317.653766] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 81, bssidx: 0
+[ 1327.658838] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 82, bssidx: 0
+[ 1337.668391] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 83, bssidx: 0
+[ 1345.754664] [  T192] type=1400 audit(1794491992.124:311): avc: denied { getattr } for comm="ls" path="/init.recovery.sun50iw9p1.rc" dev="dm-0" ino=27 scontext=u:r:shell:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1
+[ 1345.755234] [  T192] type=1400 audit(1794491992.124:312): avc: denied { getattr } for comm="ls" path="/postinstall" dev="dm-0" ino=45 scontext=u:r:shell:s0 tcontext=u:object_r:postinstall_mnt_dir:s0 tclass=dir permissive=1
+[ 1345.755564] [  T192] type=1400 audit(1794491992.124:313): avc: denied { getattr } for comm="ls" path="/cache" dev="dm-0" ino=17 scontext=u:r:shell:s0 tcontext=u:object_r:cache_file:s0 tclass=lnk_file permissive=1
+[ 1345.756549] [  T192] type=1400 audit(1794491992.124:314): avc: denied { getattr } for comm="ls" path="/data_mirror" dev="tmpfs" ino=1971 scontext=u:r:shell:s0 tcontext=u:object_r:mirror_data_file:s0 tclass=dir permissive=1
+[ 1345.756864] [  T192] type=1400 audit(1794491992.124:315): avc: denied { getattr } for comm="ls" path="/init" dev="dm-0" ino=25 scontext=u:r:shell:s0 tcontext=u:object_r:init_exec:s0 tclass=lnk_file permissive=1
+[ 1347.672746] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 84, bssidx: 0
+[ 1349.779504] [  T192] type=1400 audit(1794491996.148:316): avc: denied { getattr } for comm="sh" path="/mnt/sdcard" dev="tmpfs" ino=3519 scontext=u:r:shell:s0 tcontext=u:object_r:mnt_sdcard_file:s0 tclass=lnk_file permissive=1
+[ 1349.780218] [  T192] type=1400 audit(1794491996.148:317): avc: denied { read } for comm="sh" name="sdcard" dev="tmpfs" ino=3519 scontext=u:r:shell:s0 tcontext=u:object_r:mnt_sdcard_file:s0 tclass=lnk_file permissive=1
+[ 1349.780822] [  T192] type=1400 audit(1794491996.148:318): avc: denied { getattr } for comm="sh" path="/mnt/pass_through" dev="tmpfs" ino=3503 scontext=u:r:shell:s0 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=dir permissive=1
+[ 1349.781126] [  T192] type=1400 audit(1794491996.148:319): avc: denied { getattr } for comm="sh" path="/mnt/media_rw" dev="tmpfs" ino=3498 scontext=u:r:shell:s0 tcontext=u:object_r:mnt_media_rw_file:s0 tclass=dir permissive=1
+[ 1349.781428] [  T192] type=1400 audit(1794491996.148:320): avc: denied { getattr } for comm="sh" path="/mnt/asec" dev="tmpfs" ino=3496 scontext=u:r:shell:s0 tcontext=u:object_r:asec_apk_file:s0 tclass=dir permissive=1
+[ 1357.683330] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 85, bssidx: 0
+[ 1363.831259] [  T192] type=1400 audit(1794492010.200:324): avc: denied { read } for comm=73796E6320737663203535 name="sdcard" dev="tmpfs" ino=3519 scontext=u:r:adbd:s0 tcontext=u:object_r:mnt_sdcard_file:s0 tclass=lnk_file permissive=1
+[ 1363.988653] [  T192] type=1400 audit(1794492010.360:325): avc: denied { search } for comm="EventThread" name="extcon" dev="sysfs" ino=18015 scontext=u:r:hal_tv_cec_default:s0 tcontext=u:object_r:sysfs_extcon:s0 tclass=dir permissive=1
+[ 1363.989342] [  T192] type=1400 audit(1794492010.360:326): avc: denied { call } for comm="Thread-24" scontext=u:r:system_server:s0 tcontext=u:r:hal_awdisplayoutput_default:s0 tclass=binder permissive=1
+[ 1367.686574] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 86, bssidx: 0
+[ 1374.674645] [  T192] type=1400 audit(1794492021.044:327): avc: denied { getattr } for comm="sh" path="/postinstall" dev="dm-0" ino=45 scontext=u:r:shell:s0 tcontext=u:object_r:postinstall_mnt_dir:s0 tclass=dir permissive=1
+[ 1374.675296] [  T192] type=1400 audit(1794492021.044:328): avc: denied { getattr } for comm="sh" path="/data_mirror" dev="tmpfs" ino=1971 scontext=u:r:shell:s0 tcontext=u:object_r:mirror_data_file:s0 tclass=dir permissive=1
+[ 1374.677274] [  T192] type=1400 audit(1794492021.048:329): avc: denied { getattr } for comm="sh" path="/system/bin/init" dev="dm-0" ino=1013 scontext=u:r:shell:s0 tcontext=u:object_r:init_exec:s0 tclass=file permissive=1
+[ 1377.697895] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 87, bssidx: 0
+[ 1387.708005] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 88, bssidx: 0
+[ 1396.592062] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 89, bssidx: 0
+[ 1397.711258] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 90, bssidx: 0
+[ 1407.717754] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 91, bssidx: 0
+[ 1417.728693] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 92, bssidx: 0
+[ 1427.738545] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 93, bssidx: 0
+[ 1437.741472] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 94, bssidx: 0
+[ 1447.750127] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 95, bssidx: 0
+[ 1457.756894] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 96, bssidx: 0
+[ 1467.765403] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 97, bssidx: 0
+[ 1477.775673] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 98, bssidx: 0
+[ 1487.783599] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 99, bssidx: 0
+[ 1497.788962] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 100, bssidx: 0
+[ 1507.799107] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 101, bssidx: 0
+[ 1517.803892] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 102, bssidx: 0
+[ 1527.809371] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 103, bssidx: 0
+[ 1537.814161] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 104, bssidx: 0
+[ 1547.819855] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 105, bssidx: 0
+[ 1557.826222] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 106, bssidx: 0
+[ 1564.921717] [    T1] init: Untracked pid 2992 exited with status 1
+[ 1567.832229] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 107, bssidx: 0
+[ 1577.840559] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 108, bssidx: 0
+[ 1587.841826] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 109, bssidx: 0
+[ 1597.856242] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 110, bssidx: 0
+[ 1607.861707] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 111, bssidx: 0
+[ 1617.870922] [  T335] wl_run_escan: LEGACY_SCAN sync ID: 112, bssidx: 0
+[ 1621.747058] [ T3001] audit: audit_lost=110 audit_rate_limit=5 audit_backlog_limit=64
+[ 1621.747075] [ T3001] audit: rate limit exceeded
+[ 1621.747486] [  T192] type=1400 audit(1794492268.116:330): avc: denied { open } for comm="getprop" path="/dev/__properties__/u:object_r:aac_drc_prop:s0" dev="tmpfs" ino=3091 scontext=u:r:shell:s0 tcontext=u:object_r:aac_drc_prop:s0 tclass=file permissive=1
+[ 1621.753105] [  T192] type=1400 audit(1794492268.116:331): avc: denied { getattr } for comm="getprop" path="/dev/__properties__/u:object_r:aac_drc_prop:s0" dev="tmpfs" ino=3091 scontext=u:r:shell:s0 tcontext=u:object_r:aac_drc_prop:s0 tclass=file permissive=1
+[ 1621.753283] [  T192] type=1400 audit(1794492268.116:332): avc: denied { map } for comm="getprop" path="/dev/__properties__/u:object_r:aac_drc_prop:s0" dev="tmpfs" ino=3091 scontext=u:r:shell:s0 tcontext=u:object_r:aac_drc_prop:s0 tclass=file permissive=1
+[ 1621.753452] [  T192] type=1400 audit(1794492268.116:333): avc: denied { open } for comm="getprop" path="/dev/__properties__/u:object_r:ab_update_gki_prop:s0" dev="tmpfs" ino=3093 scontext=u:r:shell:s0 tcontext=u:object_r:ab_update_gki_prop:s0 tclass=file permissive=1
+[ 1621.753626] [  T192] type=1400 audit(1794492268.116:334): avc: denied { getattr } for comm="getprop" path="/dev/__properties__/u:object_r:ab_update_gki_prop:s0" dev="tmpfs" ino=3093 scontext=u:r:shell:s0 tcontext=u:object_r:ab_update_gki_prop:s0 tclass=file permissive=1
+[ 1623.329446] [  T192] type=1400 audit(1794492269.700:704): avc: denied { getattr } for comm="ls" path="/sys/firmware/fdt" dev="sysfs" ino=23196 scontext=u:r:shell:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[ 1623.446043] [  T192] type=1400 audit(1794492269.816:705): avc: denied { read } for comm="cat" name="partitions" dev="proc" ino=4026532125 scontext=u:r:shell:s0 tcontext=u:object_r:proc_partitions:s0 tclass=file permissive=1
+[ 1623.446709] [  T192] type=1400 audit(1794492269.816:706): avc: denied { open } for comm="cat" path="/proc/partitions" dev="proc" ino=4026532125 scontext=u:r:shell:s0 tcontext=u:object_r:proc_partitions:s0 tclass=file permissive=1

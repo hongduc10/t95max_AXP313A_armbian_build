@@ -1,0 +1,17 @@
+===== 75_device_identity =====
+Command: echo MODEL; getprop ro.product.model; echo BOARD; getprop ro.product.board; echo HARDWARE; getprop ro.hardware; echo SOC; getprop ro.board.platform; echo MANUFACTURER; getprop ro.product.manufacturer; echo ANDROID; getprop ro.build.version.release; echo BUILD; getprop ro.build.fingerprint
+
+MODEL
+T95MAX
+BOARD
+exdroid
+HARDWARE
+sun50iw9p1
+SOC
+apollo
+MANUFACTURER
+Google
+ANDROID
+12
+BUILD
+google/blueline/blueline:12/SP1A.210812.015/7679548:user/release-keys

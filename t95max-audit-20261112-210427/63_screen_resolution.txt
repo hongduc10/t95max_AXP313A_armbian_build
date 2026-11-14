@@ -1,0 +1,4 @@
+===== 63_screen_resolution =====
+Command: wm size
+
+Physical size: 1920x1080

@@ -1,0 +1,14 @@
+===== 51_regulators =====
+Command: ls -lR /sys/class/regulator 2>/dev/null
+
+/sys/class/regulator:
+total 0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 regulator.0 -> ../../devices/platform/reg-dummy/regulator/regulator.0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 regulator.1 -> ../../devices/platform/pio-18/regulator/regulator.1
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 regulator.2 -> ../../devices/platform/pio-33/regulator/regulator.2
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 regulator.3 -> ../../devices/platform/soc@3000000/7081400.twi/i2c-5/5-0036/regulator/regulator.3
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 regulator.4 -> ../../devices/platform/soc@3000000/7081400.twi/i2c-5/5-0036/regulator/regulator.4
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 regulator.5 -> ../../devices/platform/soc@3000000/7081400.twi/i2c-5/5-0036/regulator/regulator.5
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 regulator.6 -> ../../devices/platform/soc@3000000/7081400.twi/i2c-5/5-0036/regulator/regulator.6
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 regulator.7 -> ../../devices/platform/soc@3000000/7081400.twi/i2c-5/5-0036/regulator/regulator.7
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 regulator.8 -> ../../devices/platform/usb0-drvvvbus/regulator/regulator.8

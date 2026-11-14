@@ -1,0 +1,493 @@
+===== 70_cpu_topology =====
+Command: ls -lR /sys/devices/system/cpu 2>/dev/null
+
+/sys/devices/system/cpu:
+total 0
+drwxr-xr-x 7 root root    0 2026-11-12 22:04 cpu0
+drwxr-xr-x 7 root root    0 2026-11-12 22:04 cpu1
+drwxr-xr-x 7 root root    0 2026-11-12 22:04 cpu2
+drwxr-xr-x 7 root root    0 2026-11-12 22:04 cpu3
+drwxr-xr-x 4 root root    0 2026-11-12 22:04 cpufreq
+drwxr-xr-x 2 root root    0 2026-11-12 22:04 cpuidle
+drwxr-xr-x 2 root root    0 2026-11-12 22:04 hotplug
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 isolated
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 kernel_max
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 modalias
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 offline
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 online
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 possible
+drwxr-xr-x 2 root root    0 2026-11-12 22:04 power
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 present
+drwxr-xr-x 2 root root    0 2026-11-12 22:04 smt
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 uevent
+drwxr-xr-x 2 root root    0 2026-11-12 22:04 vulnerabilities
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 waiting_for_supplier
+
+/sys/devices/system/cpu/cpu0:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 cpu_capacity
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 cpufreq -> ../cpufreq/policy0
+drwxr-xr-x 5 root root    0 2026-11-12 22:04 cpuidle
+drwxr-xr-x 2 root root    0 2026-11-12 22:04 hotplug
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 of_node -> ../../../../firmware/devicetree/base/cpus/cpu@0
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 online
+drwxr-xr-x 2 root root    0 2026-11-12 22:04 power
+drwxr-xr-x 3 root root    0 2026-11-12 22:04 regs
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 subsystem -> ../../../../bus/cpu
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 supplier:regulator.4 -> ../../../virtual/devlink/regulator.4--cpu0
+drwxr-xr-x 2 root root    0 2026-11-12 22:04 topology
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 uevent
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 waiting_for_supplier
+
+/sys/devices/system/cpu/cpu0/cpuidle:
+total 0
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 driver
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 state0
+drwxr-xr-x 3 root root 0 2026-11-12 22:04 state1
+
+/sys/devices/system/cpu/cpu0/cpuidle/driver:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 name
+
+/sys/devices/system/cpu/cpu0/cpuidle/state0:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 above
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 below
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 desc
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 disable
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 latency
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 name
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 power
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 residency
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 time
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 usage
+
+/sys/devices/system/cpu/cpu0/cpuidle/state1:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 above
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 below
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 desc
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 disable
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 latency
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 name
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 power
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 residency
+drwxr-xr-x 2 root root    0 2026-11-12 22:04 s2idle
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 time
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 usage
+
+/sys/devices/system/cpu/cpu0/cpuidle/state1/s2idle:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 time
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 usage
+
+/sys/devices/system/cpu/cpu0/hotplug:
+total 0
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 fail
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 state
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 target
+
+/sys/devices/system/cpu/cpu0/power:
+total 0
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 async
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 autosuspend_delay_ms
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 control
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 pm_qos_resume_latency_us
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_active_kids
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_active_time
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_enabled
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_status
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_suspended_time
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_usage
+
+/sys/devices/system/cpu/cpu0/regs:
+total 0
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 identification
+
+/sys/devices/system/cpu/cpu0/regs/identification:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 midr_el1
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 revidr_el1
+
+/sys/devices/system/cpu/cpu0/topology:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 core_cpus
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 core_cpus_list
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 core_id
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 core_siblings
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 core_siblings_list
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 die_cpus
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 die_cpus_list
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 die_id
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 package_cpus
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 package_cpus_list
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 physical_package_id
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 thread_siblings
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 thread_siblings_list
+
+/sys/devices/system/cpu/cpu1:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 cpu_capacity
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 cpufreq -> ../cpufreq/policy0
+drwxr-xr-x 5 root root    0 2026-11-12 22:04 cpuidle
+drwxr-xr-x 2 root root    0 2026-11-12 22:04 hotplug
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 of_node -> ../../../../firmware/devicetree/base/cpus/cpu@1
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 online
+drwxr-xr-x 2 root root    0 2026-11-12 22:04 power
+drwxr-xr-x 3 root root    0 2026-11-12 22:04 regs
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 subsystem -> ../../../../bus/cpu
+drwxr-xr-x 2 root root    0 2026-11-12 22:04 topology
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 uevent
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 waiting_for_supplier
+
+/sys/devices/system/cpu/cpu1/cpuidle:
+total 0
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 driver
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 state0
+drwxr-xr-x 3 root root 0 2026-11-12 22:04 state1
+
+/sys/devices/system/cpu/cpu1/cpuidle/driver:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 name
+
+/sys/devices/system/cpu/cpu1/cpuidle/state0:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 above
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 below
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 desc
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 disable
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 latency
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 name
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 power
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 residency
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 time
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 usage
+
+/sys/devices/system/cpu/cpu1/cpuidle/state1:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 above
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 below
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 desc
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 disable
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 latency
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 name
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 power
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 residency
+drwxr-xr-x 2 root root    0 2026-11-12 22:04 s2idle
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 time
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 usage
+
+/sys/devices/system/cpu/cpu1/cpuidle/state1/s2idle:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 time
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 usage
+
+/sys/devices/system/cpu/cpu1/hotplug:
+total 0
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 fail
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 state
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 target
+
+/sys/devices/system/cpu/cpu1/power:
+total 0
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 async
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 autosuspend_delay_ms
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 control
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 pm_qos_resume_latency_us
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_active_kids
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_active_time
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_enabled
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_status
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_suspended_time
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_usage
+
+/sys/devices/system/cpu/cpu1/regs:
+total 0
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 identification
+
+/sys/devices/system/cpu/cpu1/regs/identification:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 midr_el1
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 revidr_el1
+
+/sys/devices/system/cpu/cpu1/topology:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 core_cpus
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 core_cpus_list
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 core_id
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 core_siblings
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 core_siblings_list
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 die_cpus
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 die_cpus_list
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 die_id
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 package_cpus
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 package_cpus_list
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 physical_package_id
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 thread_siblings
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 thread_siblings_list
+
+/sys/devices/system/cpu/cpu2:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 cpu_capacity
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 cpufreq -> ../cpufreq/policy0
+drwxr-xr-x 5 root root    0 2026-11-12 22:04 cpuidle
+drwxr-xr-x 2 root root    0 2026-11-12 22:04 hotplug
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 of_node -> ../../../../firmware/devicetree/base/cpus/cpu@2
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 online
+drwxr-xr-x 2 root root    0 2026-11-12 22:04 power
+drwxr-xr-x 3 root root    0 2026-11-12 22:04 regs
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 subsystem -> ../../../../bus/cpu
+drwxr-xr-x 2 root root    0 2026-11-12 22:04 topology
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 uevent
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 waiting_for_supplier
+
+/sys/devices/system/cpu/cpu2/cpuidle:
+total 0
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 driver
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 state0
+drwxr-xr-x 3 root root 0 2026-11-12 22:04 state1
+
+/sys/devices/system/cpu/cpu2/cpuidle/driver:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 name
+
+/sys/devices/system/cpu/cpu2/cpuidle/state0:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 above
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 below
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 desc
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 disable
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 latency
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 name
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 power
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 residency
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 time
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 usage
+
+/sys/devices/system/cpu/cpu2/cpuidle/state1:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 above
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 below
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 desc
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 disable
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 latency
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 name
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 power
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 residency
+drwxr-xr-x 2 root root    0 2026-11-12 22:04 s2idle
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 time
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 usage
+
+/sys/devices/system/cpu/cpu2/cpuidle/state1/s2idle:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 time
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 usage
+
+/sys/devices/system/cpu/cpu2/hotplug:
+total 0
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 fail
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 state
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 target
+
+/sys/devices/system/cpu/cpu2/power:
+total 0
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 async
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 autosuspend_delay_ms
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 control
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 pm_qos_resume_latency_us
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_active_kids
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_active_time
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_enabled
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_status
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_suspended_time
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_usage
+
+/sys/devices/system/cpu/cpu2/regs:
+total 0
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 identification
+
+/sys/devices/system/cpu/cpu2/regs/identification:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 midr_el1
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 revidr_el1
+
+/sys/devices/system/cpu/cpu2/topology:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 core_cpus
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 core_cpus_list
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 core_id
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 core_siblings
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 core_siblings_list
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 die_cpus
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 die_cpus_list
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 die_id
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 package_cpus
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 package_cpus_list
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 physical_package_id
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 thread_siblings
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 thread_siblings_list
+
+/sys/devices/system/cpu/cpu3:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 cpu_capacity
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 cpufreq -> ../cpufreq/policy0
+drwxr-xr-x 5 root root    0 2026-11-12 22:04 cpuidle
+drwxr-xr-x 2 root root    0 2026-11-12 22:04 hotplug
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 of_node -> ../../../../firmware/devicetree/base/cpus/cpu@3
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 online
+drwxr-xr-x 2 root root    0 2026-11-12 22:04 power
+drwxr-xr-x 3 root root    0 2026-11-12 22:04 regs
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 subsystem -> ../../../../bus/cpu
+drwxr-xr-x 2 root root    0 2026-11-12 22:04 topology
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 uevent
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 waiting_for_supplier
+
+/sys/devices/system/cpu/cpu3/cpuidle:
+total 0
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 driver
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 state0
+drwxr-xr-x 3 root root 0 2026-11-12 22:04 state1
+
+/sys/devices/system/cpu/cpu3/cpuidle/driver:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 name
+
+/sys/devices/system/cpu/cpu3/cpuidle/state0:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 above
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 below
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 desc
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 disable
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 latency
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 name
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 power
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 residency
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 time
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 usage
+
+/sys/devices/system/cpu/cpu3/cpuidle/state1:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 above
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 below
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 desc
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 disable
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 latency
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 name
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 power
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 residency
+drwxr-xr-x 2 root root    0 2026-11-12 22:04 s2idle
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 time
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 usage
+
+/sys/devices/system/cpu/cpu3/cpuidle/state1/s2idle:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 time
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 usage
+
+/sys/devices/system/cpu/cpu3/hotplug:
+total 0
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 fail
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 state
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 target
+
+/sys/devices/system/cpu/cpu3/power:
+total 0
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 async
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 autosuspend_delay_ms
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 control
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 pm_qos_resume_latency_us
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_active_kids
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_active_time
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_enabled
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_status
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_suspended_time
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_usage
+
+/sys/devices/system/cpu/cpu3/regs:
+total 0
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 identification
+
+/sys/devices/system/cpu/cpu3/regs/identification:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 midr_el1
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 revidr_el1
+
+/sys/devices/system/cpu/cpu3/topology:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 core_cpus
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 core_cpus_list
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 core_id
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 core_siblings
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 core_siblings_list
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 die_cpus
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 die_cpus_list
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 die_id
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 package_cpus
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 package_cpus_list
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 physical_package_id
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 thread_siblings
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 thread_siblings_list
+
+/sys/devices/system/cpu/cpufreq:
+total 0
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 policy0
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 schedutil
+
+/sys/devices/system/cpu/cpufreq/policy0:
+total 0
+-r--r--r-- 1 root   root   4096 2026-11-12 22:04 affected_cpus
+-r-------- 1 root   root   4096 2026-11-12 22:04 cpuinfo_cur_freq
+-r--r--r-- 1 root   root   4096 2026-11-12 22:04 cpuinfo_max_freq
+-r--r--r-- 1 root   root   4096 2026-11-12 22:04 cpuinfo_min_freq
+-r--r--r-- 1 root   root   4096 2026-11-12 22:04 cpuinfo_transition_latency
+-r--r--r-- 1 root   root   4096 2026-11-12 22:04 related_cpus
+-r--r--r-- 1 root   root   4096 2026-11-12 22:04 scaling_available_frequencies
+-r--r--r-- 1 root   root   4096 2026-11-12 22:04 scaling_available_governors
+-r--r--r-- 1 root   root   4096 2026-11-12 22:04 scaling_cur_freq
+-r--r--r-- 1 root   root   4096 2026-11-12 22:04 scaling_driver
+-rw-rw---- 1 system system 4096 1970-01-01 08:00 scaling_governor
+-rw-rw---- 1 system system 4096 1970-01-01 08:00 scaling_max_freq
+-rw-rw-r-- 1 system system 4096 1970-01-01 08:00 scaling_min_freq
+-rw-r--r-- 1 root   root   4096 2026-11-12 22:04 scaling_setspeed
+
+/sys/devices/system/cpu/cpufreq/schedutil:
+total 0
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 rate_limit_us
+
+/sys/devices/system/cpu/cpuidle:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 current_driver
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 current_governor_ro
+
+/sys/devices/system/cpu/hotplug:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 states
+
+/sys/devices/system/cpu/power:
+total 0
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 async
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 autosuspend_delay_ms
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 control
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_active_kids
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_active_time
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_enabled
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_status
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_suspended_time
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 runtime_usage
+
+/sys/devices/system/cpu/smt:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 active
+-rw-r--r-- 1 root root 4096 2026-11-12 22:04 control
+
+/sys/devices/system/cpu/vulnerabilities:
+total 0
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 itlb_multihit
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 l1tf
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 mds
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 meltdown
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 spec_store_bypass
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 spectre_v1
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 spectre_v2
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 srbds
+-r--r--r-- 1 root root 4096 2026-11-12 22:04 tsx_async_abort

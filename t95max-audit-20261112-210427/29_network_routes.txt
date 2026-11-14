@@ -1,0 +1,4 @@
+===== 29_network_routes =====
+Command: ip route
+
+10.19.235.0/24 dev wlan0 proto kernel scope link src 10.19.235.30 

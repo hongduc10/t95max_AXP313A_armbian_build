@@ -1,0 +1,16 @@
+===== 42_wifi_log =====
+Command: dmesg | grep -Ei 'wifi|wlan|sdio|brcm|broadcom|rtl|realtek|uwe|uwe5622|xr819|firmware|wireless|wlan0'
+
+[  607.485655] [  T192] type=1400 audit(1794491253.856:294): avc: denied { search } for comm="wifi@1.0-servic" name="wifi" dev="mmcblk0p25" ino=54 scontext=u:r:hal_wifi_default:s0 tcontext=u:object_r:wifi_data_file:s0 tclass=dir permissive=1
+[  607.487455] [  T655] dhd_apply_default_clm: Ignore clm file /vendor/etc/firmware/clm.blob
+[  607.490910] [  T655] Firmware up: op_mode=0x0005, MAC=94:a1:a2:1a:22:0b
+[  607.508545] [  T655]   Firmware: wl0: Oct 18 2016 17:43:42 version 6.25.134.25 (r662387) FWID 01-281dd9d9
+[  607.586027] [  T655] wl_android_wifi_on: Success
+[  607.764513] [    T1] init: Created socket '/dev/socket/wpa_wlan0', mode 660, user 1010, group 1010
+[  607.775698] [    T1] init: Control message: Processed ctl.interface_start for 'android.hardware.wifi.supplicant@1.0::ISupplicant/default' from pid: 179 (/system/bin/hwservicemanager)
+[  612.281577] [  T136] link down if wlan0 may call cfg80211_disconnected. event : 16, reason=2 from b0:d1:d6:92:ff:fd
+[  616.451644] [  T136] link down if wlan0 may call cfg80211_disconnected. event : 16, reason=2 from b0:d1:d6:92:ff:f9
+[  624.707352] [ T1416] link down if wlan0 may call cfg80211_disconnected. event : 16, reason=2 from b0:d1:d6:92:ff:fd
+[  871.207753] [  T655] dhd_dev_apf_get_version: firmware doesn't support APF
+[  871.207775] [  T655] dhd_dev_apf_get_max_len: firmware doesn't support APF
+[ 1623.329446] [  T192] type=1400 audit(1794492269.700:704): avc: denied { getattr } for comm="ls" path="/sys/firmware/fdt" dev="sysfs" ino=23196 scontext=u:r:shell:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1

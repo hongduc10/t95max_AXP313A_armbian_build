@@ -1,0 +1,64 @@
+===== 27_hardware_errors =====
+Command: dmesg | grep -Ei 'error|failed|timeout|fault|warning|unknown|not found|defer'
+
+[  607.183116] [  T655] mmc2: queuing unknown CIS tuple 0x41 (49 bytes)
+[  607.199227] [  T655] mmc2: queuing unknown CIS tuple 0x80 (7 bytes)
+[  607.289413] [  T655] dhd_bus_set_default_min_res_mask: Unhandled chip id
+[  607.485655] [  T192] type=1400 audit(1794491253.856:294): avc: denied { search } for comm="wifi@1.0-servic" name="wifi" dev="mmcblk0p25" ino=54 scontext=u:r:hal_wifi_default:s0 tcontext=u:object_r:wifi_data_file:s0 tclass=dir permissive=1
+[  607.486703] [  T655] Disable tdls_auto_op failed. -1
+[  607.487455] [  T655] dhd_apply_default_clm: Ignore clm file /vendor/etc/firmware/clm.blob
+[  607.495393] [  T655] dhd_preinit_ioctls Set scancache failed -23
+[  607.501359] [  T655] dhd_wl_ioctl_get_intiovar: get int iovar arp_version failed, ERR -23
+[  607.509086] [  T655] dhd_conf_set_txglom_params: txglomsize=0, deferred_tx_len=0
+[  607.510518] [  T655] dhd_preinit_ioctls wl ampdu_hostreorder failed -23
+[  607.569011] [  T655] rtt_do_get_ioctl: failed to send getbuf proxd iovar (CMD ID : 1), status=-23
+[  607.569969] [  T655] dhd_preinit_ioctls failed to set ShubHub disable
+[  607.570883] [  T655] dhd_ndo_get_version: failed, retcode = -23
+[  607.572024] [  T655] dhd_wl_ioctl_get_intiovar: get int iovar wnm_bsstrans_resp failed, ERR -23
+[  607.572031] [  T655] failed to get wnm_bsstrans_resp
+[  607.572860] [  T655] failed to set WNM capabilities
+[  607.646183] [  T655] CFG80211-ERROR) __wl_update_wiphybands : 
+[  607.646199] [  T655] error reading vhtmode (-23)
+[  607.775698] [    T1] init: Control message: Processed ctl.interface_start for 'android.hardware.wifi.supplicant@1.0::ISupplicant/default' from pid: 179 (/system/bin/hwservicemanager)
+[  612.279298] [ T2743] CFG80211-ERROR) wl_cfg80211_add_key : 
+[  612.279306] [ T2743] WLC_SET_KEY error (-8)
+[  612.280216] [ T2743] CFG80211-ERROR) wl_cfg80211_disconnect : 
+[  612.281514] [  T136] CFG80211-ERROR) wl_is_linkdown : 
+[  612.529618] [  T948] CFG80211-ERROR) wl_cfg80211_del_key : 
+[  612.529624] [  T948] WLC_SET_KEY error (-8)
+[  612.530266] [  T948] CFG80211-ERROR) wl_cfg80211_del_key : 
+[  612.530269] [  T948] WLC_SET_KEY error (-8)
+[  613.683934] [  T192] type=1400 audit(1794491260.052:297): avc: denied { search } for comm="EventThread" name="extcon" dev="sysfs" ino=18015 scontext=u:r:hal_tv_cec_default:s0 tcontext=u:object_r:sysfs_extcon:s0 tclass=dir permissive=1
+[  613.696703] [  T192] type=1400 audit(1794491260.068:298): avc: denied { call } for comm="Thread-24" scontext=u:r:system_server:s0 tcontext=u:r:hal_awdisplayoutput_default:s0 tclass=binder permissive=1
+[  616.449292] [ T2743] CFG80211-ERROR) wl_cfg80211_add_key : 
+[  616.449300] [ T2743] WLC_SET_KEY error (-8)
+[  616.449748] [ T2743] CFG80211-ERROR) wl_cfg80211_disconnect : 
+[  616.451620] [  T136] CFG80211-ERROR) wl_is_linkdown : 
+[  616.697143] [    T7] CFG80211-ERROR) wl_cfg80211_del_key : 
+[  616.697155] [    T7] WLC_SET_KEY error (-8)
+[  616.697949] [    T7] CFG80211-ERROR) wl_cfg80211_del_key : 
+[  616.697954] [    T7] WLC_SET_KEY error (-8)
+[  620.543076] [  T136] connect failed event=0 e->status 1 e->reason 0 
+[  620.543090] [  T136] CFG80211-ERROR) wl_cfg80211_check_in4way : 
+[  620.543093] [  T136] WPA failed at 13
+[  620.544564] [  T136] CFG80211-ERROR) wl_bss_connect_done : 
+[  620.544570] [  T136] Report connect result - connection failed
+[  624.704816] [ T2743] CFG80211-ERROR) wl_cfg80211_add_key : 
+[  624.704825] [ T2743] WLC_SET_KEY error (-8)
+[  624.705732] [ T2743] CFG80211-ERROR) wl_cfg80211_disconnect : 
+[  624.707263] [ T1416] CFG80211-ERROR) wl_is_linkdown : 
+[  624.952413] [ T2782] CFG80211-ERROR) wl_cfg80211_del_key : 
+[  624.952421] [ T2782] WLC_SET_KEY error (-8)
+[  624.953238] [ T2782] CFG80211-ERROR) wl_cfg80211_del_key : 
+[  624.953243] [ T2782] WLC_SET_KEY error (-8)
+[  628.808069] [  T166] connect failed event=0 e->status 1 e->reason 0 
+[  628.808085] [  T166] CFG80211-ERROR) wl_cfg80211_check_in4way : 
+[  628.808089] [  T166] WPA failed at 13
+[  628.809223] [  T166] CFG80211-ERROR) wl_bss_connect_done : 
+[  628.809230] [  T166] Report connect result - connection failed
+[  871.255014] [  T192] type=1400 audit(1794491517.624:301): avc: denied { call } for comm="Thread-24" scontext=u:r:system_server:s0 tcontext=u:r:hal_awdisplayoutput_default:s0 tclass=binder permissive=1
+[  871.645151] [  T192] type=1400 audit(1794491518.016:302): avc: denied { search } for comm="EventThread" name="extcon" dev="sysfs" ino=18015 scontext=u:r:hal_tv_cec_default:s0 tcontext=u:object_r:sysfs_extcon:s0 tclass=dir permissive=1
+[  902.871329] [  T192] type=1400 audit(1794491549.240:306): avc: denied { call } for comm="Thread-24" scontext=u:r:system_server:s0 tcontext=u:r:hal_awdisplayoutput_default:s0 tclass=binder permissive=1
+[  915.721662] [  T192] type=1400 audit(1794491562.092:307): avc: denied { search } for comm="EventThread" name="extcon" dev="sysfs" ino=18015 scontext=u:r:hal_tv_cec_default:s0 tcontext=u:object_r:sysfs_extcon:s0 tclass=dir permissive=1
+[ 1363.988653] [  T192] type=1400 audit(1794492010.360:325): avc: denied { search } for comm="EventThread" name="extcon" dev="sysfs" ino=18015 scontext=u:r:hal_tv_cec_default:s0 tcontext=u:object_r:sysfs_extcon:s0 tclass=dir permissive=1
+[ 1363.989342] [  T192] type=1400 audit(1794492010.360:326): avc: denied { call } for comm="Thread-24" scontext=u:r:system_server:s0 tcontext=u:r:hal_awdisplayoutput_default:s0 tclass=binder permissive=1

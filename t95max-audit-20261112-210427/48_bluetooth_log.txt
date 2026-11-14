@@ -1,0 +1,7 @@
+===== 48_bluetooth_log =====
+Command: dmesg | grep -Ei 'bluetooth|hci|btusb|uart|firmware'
+
+[  607.508545] [  T655]   Firmware: wl0: Oct 18 2016 17:43:42 version 6.25.134.25 (r662387) FWID 01-281dd9d9
+[  871.207753] [  T655] dhd_dev_apf_get_version: firmware doesn't support APF
+[  871.207775] [  T655] dhd_dev_apf_get_max_len: firmware doesn't support APF
+[ 1623.329446] [  T192] type=1400 audit(1794492269.700:704): avc: denied { getattr } for comm="ls" path="/sys/firmware/fdt" dev="sysfs" ino=23196 scontext=u:r:shell:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1

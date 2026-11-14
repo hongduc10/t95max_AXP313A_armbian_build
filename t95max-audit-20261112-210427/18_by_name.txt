@@ -1,0 +1,101 @@
+===== 18_by_name =====
+Command: ls -lR /dev/block/by-name /dev/block/platform 2>/dev/null
+
+/dev/block/by-name:
+total 0
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 Reserve0 -> /dev/block/mmcblk0p24
+lrwxrwxrwx 1 root root 20 1970-01-01 08:00 boot_a -> /dev/block/mmcblk0p5
+lrwxrwxrwx 1 root root 20 1970-01-01 08:00 boot_b -> /dev/block/mmcblk0p6
+lrwxrwxrwx 1 root root 20 1970-01-01 08:00 bootloader_a -> /dev/block/mmcblk0p1
+lrwxrwxrwx 1 root root 20 1970-01-01 08:00 bootloader_b -> /dev/block/mmcblk0p2
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 dtbo_a -> /dev/block/mmcblk0p21
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 dtbo_b -> /dev/block/mmcblk0p22
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 empty -> /dev/block/mmcblk0p18
+lrwxrwxrwx 1 root root 20 1970-01-01 08:00 env_a -> /dev/block/mmcblk0p3
+lrwxrwxrwx 1 root root 20 1970-01-01 08:00 env_b -> /dev/block/mmcblk0p4
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 frp -> /dev/block/mmcblk0p17
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 media_data -> /dev/block/mmcblk0p23
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 metadata -> /dev/block/mmcblk0p19
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 misc -> /dev/block/mmcblk0p10
+lrwxrwxrwx 1 root root 18 1970-01-01 08:00 mmcblk0 -> /dev/block/mmcblk0
+lrwxrwxrwx 1 root root 23 1970-01-01 08:00 mmcblk0boot0 -> /dev/block/mmcblk0boot0
+lrwxrwxrwx 1 root root 23 1970-01-01 08:00 mmcblk0boot1 -> /dev/block/mmcblk0boot1
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 private -> /dev/block/mmcblk0p20
+lrwxrwxrwx 1 root root 20 1970-01-01 08:00 super -> /dev/block/mmcblk0p9
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 userdata -> /dev/block/mmcblk0p25
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 vbmeta_a -> /dev/block/mmcblk0p11
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 vbmeta_b -> /dev/block/mmcblk0p12
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 vbmeta_system_a -> /dev/block/mmcblk0p13
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 vbmeta_system_b -> /dev/block/mmcblk0p14
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 vbmeta_vendor_a -> /dev/block/mmcblk0p15
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 vbmeta_vendor_b -> /dev/block/mmcblk0p16
+lrwxrwxrwx 1 root root 20 1970-01-01 08:00 vendor_boot_a -> /dev/block/mmcblk0p7
+lrwxrwxrwx 1 root root 20 1970-01-01 08:00 vendor_boot_b -> /dev/block/mmcblk0p8
+
+/dev/block/platform:
+total 0
+drwxr-xr-x 3 root root 60 1970-01-01 08:00 soc@3000000
+
+/dev/block/platform/soc@3000000:
+total 0
+drwxr-xr-x 3 root root 620 1970-01-01 08:00 4022000.sdmmc
+
+/dev/block/platform/soc@3000000/4022000.sdmmc:
+total 0
+drwxr-xr-x 2 root root 540 1970-01-01 08:00 by-name
+lrwxrwxrwx 1 root root  18 1970-01-01 08:00 mmcblk0 -> /dev/block/mmcblk0
+lrwxrwxrwx 1 root root  23 1970-01-01 08:00 mmcblk0boot0 -> /dev/block/mmcblk0boot0
+lrwxrwxrwx 1 root root  23 1970-01-01 08:00 mmcblk0boot1 -> /dev/block/mmcblk0boot1
+lrwxrwxrwx 1 root root  20 1970-01-01 08:00 mmcblk0p1 -> /dev/block/mmcblk0p1
+lrwxrwxrwx 1 root root  21 1970-01-01 08:00 mmcblk0p10 -> /dev/block/mmcblk0p10
+lrwxrwxrwx 1 root root  21 1970-01-01 08:00 mmcblk0p11 -> /dev/block/mmcblk0p11
+lrwxrwxrwx 1 root root  21 1970-01-01 08:00 mmcblk0p12 -> /dev/block/mmcblk0p12
+lrwxrwxrwx 1 root root  21 1970-01-01 08:00 mmcblk0p13 -> /dev/block/mmcblk0p13
+lrwxrwxrwx 1 root root  21 1970-01-01 08:00 mmcblk0p14 -> /dev/block/mmcblk0p14
+lrwxrwxrwx 1 root root  21 1970-01-01 08:00 mmcblk0p15 -> /dev/block/mmcblk0p15
+lrwxrwxrwx 1 root root  21 1970-01-01 08:00 mmcblk0p16 -> /dev/block/mmcblk0p16
+lrwxrwxrwx 1 root root  21 1970-01-01 08:00 mmcblk0p17 -> /dev/block/mmcblk0p17
+lrwxrwxrwx 1 root root  21 1970-01-01 08:00 mmcblk0p18 -> /dev/block/mmcblk0p18
+lrwxrwxrwx 1 root root  21 1970-01-01 08:00 mmcblk0p19 -> /dev/block/mmcblk0p19
+lrwxrwxrwx 1 root root  20 1970-01-01 08:00 mmcblk0p2 -> /dev/block/mmcblk0p2
+lrwxrwxrwx 1 root root  21 1970-01-01 08:00 mmcblk0p20 -> /dev/block/mmcblk0p20
+lrwxrwxrwx 1 root root  21 1970-01-01 08:00 mmcblk0p21 -> /dev/block/mmcblk0p21
+lrwxrwxrwx 1 root root  21 1970-01-01 08:00 mmcblk0p22 -> /dev/block/mmcblk0p22
+lrwxrwxrwx 1 root root  21 1970-01-01 08:00 mmcblk0p23 -> /dev/block/mmcblk0p23
+lrwxrwxrwx 1 root root  21 1970-01-01 08:00 mmcblk0p24 -> /dev/block/mmcblk0p24
+lrwxrwxrwx 1 root root  21 1970-01-01 08:00 mmcblk0p25 -> /dev/block/mmcblk0p25
+lrwxrwxrwx 1 root root  20 1970-01-01 08:00 mmcblk0p3 -> /dev/block/mmcblk0p3
+lrwxrwxrwx 1 root root  20 1970-01-01 08:00 mmcblk0p4 -> /dev/block/mmcblk0p4
+lrwxrwxrwx 1 root root  20 1970-01-01 08:00 mmcblk0p5 -> /dev/block/mmcblk0p5
+lrwxrwxrwx 1 root root  20 1970-01-01 08:00 mmcblk0p6 -> /dev/block/mmcblk0p6
+lrwxrwxrwx 1 root root  20 1970-01-01 08:00 mmcblk0p7 -> /dev/block/mmcblk0p7
+lrwxrwxrwx 1 root root  20 1970-01-01 08:00 mmcblk0p8 -> /dev/block/mmcblk0p8
+lrwxrwxrwx 1 root root  20 1970-01-01 08:00 mmcblk0p9 -> /dev/block/mmcblk0p9
+
+/dev/block/platform/soc@3000000/4022000.sdmmc/by-name:
+total 0
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 Reserve0 -> /dev/block/mmcblk0p24
+lrwxrwxrwx 1 root root 20 1970-01-01 08:00 boot_a -> /dev/block/mmcblk0p5
+lrwxrwxrwx 1 root root 20 1970-01-01 08:00 boot_b -> /dev/block/mmcblk0p6
+lrwxrwxrwx 1 root root 20 1970-01-01 08:00 bootloader_a -> /dev/block/mmcblk0p1
+lrwxrwxrwx 1 root root 20 1970-01-01 08:00 bootloader_b -> /dev/block/mmcblk0p2
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 dtbo_a -> /dev/block/mmcblk0p21
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 dtbo_b -> /dev/block/mmcblk0p22
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 empty -> /dev/block/mmcblk0p18
+lrwxrwxrwx 1 root root 20 1970-01-01 08:00 env_a -> /dev/block/mmcblk0p3
+lrwxrwxrwx 1 root root 20 1970-01-01 08:00 env_b -> /dev/block/mmcblk0p4
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 frp -> /dev/block/mmcblk0p17
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 media_data -> /dev/block/mmcblk0p23
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 metadata -> /dev/block/mmcblk0p19
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 misc -> /dev/block/mmcblk0p10
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 private -> /dev/block/mmcblk0p20
+lrwxrwxrwx 1 root root 20 1970-01-01 08:00 super -> /dev/block/mmcblk0p9
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 userdata -> /dev/block/mmcblk0p25
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 vbmeta_a -> /dev/block/mmcblk0p11
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 vbmeta_b -> /dev/block/mmcblk0p12
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 vbmeta_system_a -> /dev/block/mmcblk0p13
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 vbmeta_system_b -> /dev/block/mmcblk0p14
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 vbmeta_vendor_a -> /dev/block/mmcblk0p15
+lrwxrwxrwx 1 root root 21 1970-01-01 08:00 vbmeta_vendor_b -> /dev/block/mmcblk0p16
+lrwxrwxrwx 1 root root 20 1970-01-01 08:00 vendor_boot_a -> /dev/block/mmcblk0p7
+lrwxrwxrwx 1 root root 20 1970-01-01 08:00 vendor_boot_b -> /dev/block/mmcblk0p8

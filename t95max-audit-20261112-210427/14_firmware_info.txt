@@ -1,0 +1,14 @@
+===== 14_firmware_info =====
+Command: ls -l /sys/firmware /sys/firmware/devicetree /sys/firmware/fdt 2>/dev/null
+
+
+-r-------- 1 root root 196608 2026-11-12 22:04 /sys/firmware/fdt
+
+/sys/firmware:
+total 0
+drwxr-xr-x 3 root root      0 2026-11-12 22:04 devicetree
+-r-------- 1 root root 196608 2026-11-12 22:04 fdt
+
+/sys/firmware/devicetree:
+total 0
+drwxr-xr-x 27 root root 0 2026-11-12 22:04 base

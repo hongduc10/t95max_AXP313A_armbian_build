@@ -1,0 +1,43 @@
+===== 10_interrupts =====
+Command: cat /proc/interrupts
+
+           CPU0       CPU1       CPU2       CPU3       
+ 12:     633625     485938     554930     560349     GIC-0  27 Level     arch_timer
+ 14:     135265          0          0          0     GIC-0  80 Level     timer@3009000
+ 15:      16684          0          0          0  wakeupgen  88 Level     dispaly
+ 18:      97180          0          0          0  wakeupgen  66 Level     dispaly
+ 20:        233          0          0          0  wakeupgen  93 Level     cedar_dev
+ 21:          0          0          0          0  wakeupgen  90 Level     1480000.g2d
+ 22:        233          0          0          0  wakeupgen  89 Level     1420000.deinterlace
+ 23:      38282          0          0          0  wakeupgen  95 Level     1800000.gpu
+ 24:         22          0          0          0  wakeupgen  96 Level     1800000.gpu
+ 25:     100741          0          0          0  wakeupgen  97 Level     1800000.gpu
+ 26:          0          0          0          0  wakeupgen 104 Level     7000000.rtc
+ 27:      19975          0          0          0  wakeupgen  42 Level     3002000.dma-controller
+ 39:          0          0          0          0  wakeupgen  61 Level     30f0000.iommu
+ 40:     156061          0          0          0  wakeupgen  37 Level     mmc2
+ 41:          0          0          0          0  wakeupgen  35 Level     mmc0
+ 42:     212037          0          0          0  wakeupgen  36 Level     mmc1
+ 43:          1          0          0          0  wakeupgen   0 Level     uart0
+ 44:      15267          0          0          0  wakeupgen   1 Level     uart1
+ 45:    1444314          0          0          0  wakeupgen 105 Level     twi5
+ 46:        553          0          0          0  wakeupgen  15 Level     5030000.eth
+ 48:          2          0          0          0  wakeupgen  26 Level     ehci_hcd:usb1
+ 49:      15883          0          0          0  wakeupgen  27 Level     ohci_hcd:usb5
+ 50:          0          0          0          0  wakeupgen  28 Level     ehci_hcd:usb2
+ 51:          0          0          0          0  wakeupgen  29 Level     ohci_hcd:usb6
+ 52:          0          0          0          0  wakeupgen  30 Level     ehci_hcd:usb3
+ 53:          0          0          0          0  wakeupgen  31 Level     ohci_hcd:usb7
+ 54:          0          0          0          0  wakeupgen  32 Level     ehci_hcd:usb4
+ 55:          0          0          0          0  wakeupgen  33 Level     ohci_hcd:usb8
+ 58:        204          0          0          0  wakeupgen 106 Level     RemoteIR_RX
+234:      31035          0          0          0  sunxi_pio_level 175 Level     bcmsdh_sdmmc
+299:          1          0          0          0  sunxi_pio_edge 240 Edge      4020000.sdmmc cd
+IPI0:    331562     583496     440549     432573       Rescheduling interrupts
+IPI1:       727        651        606        567       Function call interrupts
+IPI2:         0          0          0          0       CPU stop interrupts
+IPI3:         0          0          0          0       CPU stop (for crash dump) interrupts
+IPI4:         0      30819      29674      30417       Timer broadcast interrupts
+IPI5:     20712       8511      10898      11464       IRQ work interrupts
+IPI6:         0          0          0          0       CPU wake-up interrupts
+Err:          0

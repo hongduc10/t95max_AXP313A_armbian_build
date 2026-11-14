@@ -1,0 +1,37 @@
+===== 20_block_sysfs =====
+Command: ls -lR /sys/block 2>/dev/null
+
+/sys/block:
+total 0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 dm-0 -> ../devices/virtual/block/dm-0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 dm-1 -> ../devices/virtual/block/dm-1
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 dm-2 -> ../devices/virtual/block/dm-2
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 dm-3 -> ../devices/virtual/block/dm-3
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 loop0 -> ../devices/virtual/block/loop0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 loop1 -> ../devices/virtual/block/loop1
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 loop2 -> ../devices/virtual/block/loop2
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 loop3 -> ../devices/virtual/block/loop3
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 loop4 -> ../devices/virtual/block/loop4
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 loop5 -> ../devices/virtual/block/loop5
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 loop6 -> ../devices/virtual/block/loop6
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 loop7 -> ../devices/virtual/block/loop7
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 mmcblk0 -> ../devices/platform/soc@3000000/4022000.sdmmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 mmcblk0boot0 -> ../devices/platform/soc@3000000/4022000.sdmmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0boot0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 mmcblk0boot1 -> ../devices/platform/soc@3000000/4022000.sdmmc/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0boot1
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 ram0 -> ../devices/virtual/block/ram0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 ram1 -> ../devices/virtual/block/ram1
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 ram10 -> ../devices/virtual/block/ram10
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 ram11 -> ../devices/virtual/block/ram11
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 ram12 -> ../devices/virtual/block/ram12
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 ram13 -> ../devices/virtual/block/ram13
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 ram14 -> ../devices/virtual/block/ram14
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 ram15 -> ../devices/virtual/block/ram15
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 ram2 -> ../devices/virtual/block/ram2
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 ram3 -> ../devices/virtual/block/ram3
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 ram4 -> ../devices/virtual/block/ram4
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 ram5 -> ../devices/virtual/block/ram5
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 ram6 -> ../devices/virtual/block/ram6
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 ram7 -> ../devices/virtual/block/ram7
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 ram8 -> ../devices/virtual/block/ram8
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 ram9 -> ../devices/virtual/block/ram9
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 zram0 -> ../devices/virtual/block/zram0

@@ -1,0 +1,3 @@
+===== 56_power_log =====
+Command: dmesg | grep -Ei 'pmic|axp|regulator|power|voltage|thermal|cpu.*freq|opp'
+

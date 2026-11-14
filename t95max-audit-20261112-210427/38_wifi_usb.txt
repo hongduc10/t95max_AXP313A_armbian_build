@@ -1,0 +1,21 @@
+===== 38_wifi_usb =====
+Command: ls -lR /sys/bus/usb/devices 2>/dev/null
+
+/sys/bus/usb/devices:
+total 0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 1-0:1.0 -> ../../../devices/platform/soc@3000000/5101000.ehci0-controller/usb1/1-0:1.0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 2-0:1.0 -> ../../../devices/platform/soc@3000000/5200000.ehci1-controller/usb2/2-0:1.0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 3-0:1.0 -> ../../../devices/platform/soc@3000000/5310000.ehci2-controller/usb3/3-0:1.0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 4-0:1.0 -> ../../../devices/platform/soc@3000000/5311000.ehci3-controller/usb4/4-0:1.0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 5-0:1.0 -> ../../../devices/platform/soc@3000000/5101400.ohci0-controller/usb5/5-0:1.0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 6-0:1.0 -> ../../../devices/platform/soc@3000000/5200400.ohci1-controller/usb6/6-0:1.0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 7-0:1.0 -> ../../../devices/platform/soc@3000000/5310400.ohci2-controller/usb7/7-0:1.0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 8-0:1.0 -> ../../../devices/platform/soc@3000000/5311400.ohci3-controller/usb8/8-0:1.0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 usb1 -> ../../../devices/platform/soc@3000000/5101000.ehci0-controller/usb1
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 usb2 -> ../../../devices/platform/soc@3000000/5200000.ehci1-controller/usb2
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 usb3 -> ../../../devices/platform/soc@3000000/5310000.ehci2-controller/usb3
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 usb4 -> ../../../devices/platform/soc@3000000/5311000.ehci3-controller/usb4
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 usb5 -> ../../../devices/platform/soc@3000000/5101400.ohci0-controller/usb5
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 usb6 -> ../../../devices/platform/soc@3000000/5200400.ohci1-controller/usb6
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 usb7 -> ../../../devices/platform/soc@3000000/5310400.ohci2-controller/usb7
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 usb8 -> ../../../devices/platform/soc@3000000/5311400.ohci3-controller/usb8

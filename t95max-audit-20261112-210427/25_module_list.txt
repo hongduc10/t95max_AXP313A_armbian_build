@@ -1,0 +1,4 @@
+===== 25_module_list =====
+Command: ls -lR /lib/modules /vendor/lib/modules 2>/dev/null
+
+lrw-r--r-- 1 root root 24 2009-01-01 08:00 /vendor/lib/modules -> /vendor_dlkm/lib/modules

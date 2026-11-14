@@ -1,0 +1,13 @@
+===== 19_mmc =====
+Command: ls -lR /sys/bus/mmc/devices /sys/class/mmc_host 2>/dev/null
+
+/sys/bus/mmc/devices:
+total 0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 mmc0:0001 -> ../../../devices/platform/soc@3000000/4022000.sdmmc/mmc_host/mmc0/mmc0:0001
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 mmc2:0001 -> ../../../devices/platform/soc@3000000/4021000.sdmmc/mmc_host/mmc2/mmc2:0001
+
+/sys/class/mmc_host:
+total 0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 mmc0 -> ../../devices/platform/soc@3000000/4022000.sdmmc/mmc_host/mmc0
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 mmc1 -> ../../devices/platform/soc@3000000/4020000.sdmmc/mmc_host/mmc1
+lrwxrwxrwx 1 root root 0 2026-11-12 22:04 mmc2 -> ../../devices/platform/soc@3000000/4021000.sdmmc/mmc_host/mmc2

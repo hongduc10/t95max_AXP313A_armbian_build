@@ -1,0 +1,15 @@
+--- a/arch/arm64/boot/dts/allwinner/T95zPlus-H618.dts
++++ b/arch/arm64/boot/dts/allwinner/T95zPlus-H618.dts
+@@ -313,3 +313,11 @@
+ &usbphy {
+ 	status = "okay";
+ };
++
++/ {
++	openvfd {
++		compatible = "open,vfd";
++		dev_name = "openvfd";
++		status = "okay";
++	};
++};
+

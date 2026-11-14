@@ -1,0 +1,4 @@
+===== 05_cmdline =====
+Command: cat /proc/cmdline
+
+cat: /proc/cmdline: Permission denied

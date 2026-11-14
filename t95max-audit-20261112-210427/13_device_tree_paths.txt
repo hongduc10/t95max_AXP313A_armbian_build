@@ -1,0 +1,3 @@
+===== 13_device_tree_paths =====
+Command: find /proc/device-tree -maxdepth 5 -type f 2>/dev/null
+

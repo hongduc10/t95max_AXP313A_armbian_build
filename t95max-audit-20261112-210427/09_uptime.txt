@@ -1,0 +1,4 @@
+===== 09_uptime =====
+Command: cat /proc/uptime
+
+1622.74 5742.90

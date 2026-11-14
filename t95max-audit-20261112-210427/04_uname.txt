@@ -1,0 +1,4 @@
+===== 04_uname =====
+Command: uname -a
+
+Linux localhost 5.4.125 #55 SMP PREEMPT Thu Feb 2 10:28:06 CST 2023 armv8l

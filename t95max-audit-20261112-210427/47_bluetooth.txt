@@ -1,0 +1,615 @@
+===== 47_bluetooth =====
+Command: ls -lR /sys/bus/serial/devices /sys/class/bluetooth /sys/bus/platform/drivers 2>/dev/null
+
+/sys/bus/platform/drivers:
+total 0
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 MBUS_PMU
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 acx-ephy
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 alarmtimer
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 allwinner,sunxi-hdmi
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 armv8-pmu
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 axp2101-pek
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 axp2101-regulator
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 basic-mmio-gpio
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 cpufreq-dt
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 deinterlace
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 disp
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 dump_reg
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 eeprom-sunxi-sid
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 fd655_dev
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 g2d
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 gpio-clk
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 gpio_sw
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 gralloc
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 mali
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 of_fixed_clk
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 of_fixed_factor_clk
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 of_serial
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 otg manager
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 pinctrl-single
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 ramoops
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 reg-dummy
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 reg-fixed-voltage
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 serial8250
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 simple-reset
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 snd-soc-dummy
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 soc-audio
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 spi
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sun50i-a100-ccu
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sun50i-a100-pinctrl
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sun50i-a100-r-ccu
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sun50i-cpufreq-nvmem
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sun50i-de2-bus
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sun50iw10p1-r-pinctrl
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sun50iw9-ccu
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sun50iw9-pinctrl
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sun50iw9-r-ccu
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sun50iw9-r-pinctrl
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sun50iw9-rtc-ccu
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sun6i-dma
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sun6i-prcm
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi-addr-mgt
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi-btlpm
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi-cedar
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi-ehci
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi-gmac
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi-init-gpio
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi-iommu
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi-ir
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi-keyboard
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi-mmc
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi-ohci
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi-rc-recv
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi-rfkill
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi-rsb
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi-rtc
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi-rtc-ccu
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi-snd-codec
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi-snd-mach
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi-snd-plat-aaudio
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi-snd-plat-ahub
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi-snd-plat-ahub_dam
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi-snd-plat-spdif
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi-sram
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi-thermal
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi-wdt
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi_irq_nmi
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi_pwm
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 sunxi_usb_udc
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 syscon
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 tv
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 twi
+drwxr-xr-x 2 root root 0 2026-11-12 22:04 uart
+
+/sys/bus/platform/drivers/MBUS_PMU:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 47fa000.mbus-controller -> ../../../../devices/platform/soc@3000000/47fa000.mbus-controller
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/acx-ephy:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/alarmtimer:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 alarmtimer.0.auto -> ../../../../devices/platform/soc@3000000/7000000.rtc/rtc/rtc0/alarmtimer.0.auto
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/allwinner,sunxi-hdmi:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 6000000.hdmi -> ../../../../devices/platform/soc@3000000/6000000.hdmi
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/armv8-pmu:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+
+/sys/bus/platform/drivers/axp2101-pek:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/axp2101-regulator:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 axp2101-regulator.0 -> ../../../../devices/platform/soc@3000000/7081400.twi/i2c-5/5-0036/axp2101-regulator.0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/basic-mmio-gpio:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/cpufreq-dt:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 cpufreq-dt -> ../../../../devices/platform/cpufreq-dt
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/deinterlace:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 1420000.deinterlace -> ../../../../devices/platform/soc@3000000/1420000.deinterlace
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/disp:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 1000000.disp -> ../../../../devices/platform/soc@3000000/1000000.disp
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/dump_reg:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 20000.dump-reg -> ../../../../devices/platform/20000.dump-reg
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/eeprom-sunxi-sid:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 3006000.sid -> ../../../../devices/platform/soc@3000000/3006000.sid
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/fd655_dev:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 module -> ../../../../module/h6_fd655
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 soc@3000000:leds -> ../../../../devices/platform/soc@3000000/soc@3000000:leds
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/g2d:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 1480000.g2d -> ../../../../devices/platform/soc@3000000/1480000.g2d
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/gpio-clk:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/gpio_sw:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 gpio_sw.0 -> ../../../../devices/platform/gpio_sw.0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 gpio_sw.1 -> ../../../../devices/platform/gpio_sw.1
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/gralloc:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/mali:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 1800000.gpu -> ../../../../devices/platform/soc@3000000/1800000.gpu
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 module -> ../../../../module/mali_kbase
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/of_fixed_clk:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/of_fixed_factor_clk:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/of_serial:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/otg manager:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 module -> ../../../../module/sunxi_usbc
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 soc@3000000:usbc0@0 -> ../../../../devices/platform/soc@3000000/soc@3000000:usbc0@0
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/pinctrl-single:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/ramoops:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/reg-dummy:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 reg-dummy -> ../../../../devices/platform/reg-dummy
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/reg-fixed-voltage:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 pio-18 -> ../../../../devices/platform/pio-18
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 pio-33 -> ../../../../devices/platform/pio-33
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 usb0-drvvvbus -> ../../../../devices/platform/usb0-drvvvbus
+
+/sys/bus/platform/drivers/serial8250:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 serial8250 -> ../../../../devices/platform/serial8250
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/simple-reset:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/snd-soc-dummy:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 snd-soc-dummy -> ../../../../devices/platform/snd-soc-dummy
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/soc-audio:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/spi:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sun50i-a100-ccu:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sun50i-a100-pinctrl:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sun50i-a100-r-ccu:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sun50i-cpufreq-nvmem:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 sun50i-cpufreq-nvmem -> ../../../../devices/platform/sun50i-cpufreq-nvmem
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sun50i-de2-bus:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sun50iw10p1-r-pinctrl:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sun50iw9-ccu:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 3001000.ccu -> ../../../../devices/platform/soc@3000000/3001000.ccu
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sun50iw9-pinctrl:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 300b000.pinctrl -> ../../../../devices/platform/soc@3000000/300b000.pinctrl
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sun50iw9-r-ccu:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 7010000.r_ccu -> ../../../../devices/platform/soc@3000000/7010000.r_ccu
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sun50iw9-r-pinctrl:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 7022000.pinctrl -> ../../../../devices/platform/soc@3000000/7022000.pinctrl
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sun50iw9-rtc-ccu:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 7000000.rtc_ccu -> ../../../../devices/platform/soc@3000000/7000000.rtc_ccu
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sun6i-dma:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 3002000.dma-controller -> ../../../../devices/platform/soc@3000000/3002000.dma-controller
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sun6i-prcm:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sunxi-addr-mgt:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 soc@3000000:addr_mgt -> ../../../../devices/platform/soc@3000000/soc@3000000:addr_mgt
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+
+/sys/bus/platform/drivers/sunxi-btlpm:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 module -> ../../../../module/bcm_btlpm
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 soc@3000000:btlpm -> ../../../../devices/platform/soc@3000000/soc@3000000:btlpm
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+
+/sys/bus/platform/drivers/sunxi-cedar:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 1c0e000.ve -> ../../../../devices/platform/soc@3000000/1c0e000.ve
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 soc@3000000:ve1@1c0e000 -> ../../../../devices/platform/soc@3000000/soc@3000000:ve1@1c0e000
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sunxi-ehci:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 5101000.ehci0-controller -> ../../../../devices/platform/soc@3000000/5101000.ehci0-controller
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 5200000.ehci1-controller -> ../../../../devices/platform/soc@3000000/5200000.ehci1-controller
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 5310000.ehci2-controller -> ../../../../devices/platform/soc@3000000/5310000.ehci2-controller
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 5311000.ehci3-controller -> ../../../../devices/platform/soc@3000000/5311000.ehci3-controller
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 module -> ../../../../module/ehci_sunxi
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sunxi-gmac:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 5030000.eth -> ../../../../devices/platform/soc@3000000/5030000.eth
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sunxi-init-gpio:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 soc@3000000:gpio_para -> ../../../../devices/platform/soc@3000000/soc@3000000:gpio_para
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sunxi-iommu:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 30f0000.iommu -> ../../../../devices/platform/soc@3000000/30f0000.iommu
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sunxi-ir:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sunxi-keyboard:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sunxi-mmc:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 4020000.sdmmc -> ../../../../devices/platform/soc@3000000/4020000.sdmmc
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 4021000.sdmmc -> ../../../../devices/platform/soc@3000000/4021000.sdmmc
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 4022000.sdmmc -> ../../../../devices/platform/soc@3000000/4022000.sdmmc
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sunxi-ohci:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 5101400.ohci0-controller -> ../../../../devices/platform/soc@3000000/5101400.ohci0-controller
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 5200400.ohci1-controller -> ../../../../devices/platform/soc@3000000/5200400.ohci1-controller
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 5310400.ohci2-controller -> ../../../../devices/platform/soc@3000000/5310400.ohci2-controller
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 5311400.ohci3-controller -> ../../../../devices/platform/soc@3000000/5311400.ohci3-controller
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 module -> ../../../../module/ohci_sunxi
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sunxi-rc-recv:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 7040000.s_cir -> ../../../../devices/platform/soc@3000000/7040000.s_cir
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sunxi-rfkill:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 module -> ../../../../module/sunxi_rfkill
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 soc@3000000:rfkill -> ../../../../devices/platform/soc@3000000/soc@3000000:rfkill
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+
+/sys/bus/platform/drivers/sunxi-rsb:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sunxi-rtc:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 7000000.rtc -> ../../../../devices/platform/soc@3000000/7000000.rtc
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sunxi-rtc-ccu:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sunxi-snd-codec:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 5096000.codec -> ../../../../devices/platform/soc@3000000/5096000.codec
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sunxi-snd-mach:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 soc@3000000:ahub1_mach -> ../../../../devices/platform/soc@3000000/soc@3000000:ahub1_mach
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 soc@3000000:ahub2_mach -> ../../../../devices/platform/soc@3000000/soc@3000000:ahub2_mach
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 soc@3000000:ahub_dam_mach -> ../../../../devices/platform/soc@3000000/soc@3000000:ahub_dam_mach
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 soc@3000000:codec_mach -> ../../../../devices/platform/soc@3000000/soc@3000000:codec_mach
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 soc@3000000:spdif_mach -> ../../../../devices/platform/soc@3000000/soc@3000000:spdif_mach
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sunxi-snd-plat-aaudio:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 soc@3000000:codec_plat -> ../../../../devices/platform/soc@3000000/soc@3000000:codec_plat
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sunxi-snd-plat-ahub:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 soc@3000000:ahub1_plat -> ../../../../devices/platform/soc@3000000/soc@3000000:ahub1_plat
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 soc@3000000:ahub2_plat -> ../../../../devices/platform/soc@3000000/soc@3000000:ahub2_plat
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sunxi-snd-plat-ahub_dam:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 5097000.ahub_dam_plat -> ../../../../devices/platform/soc@3000000/5097000.ahub_dam_plat
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sunxi-snd-plat-spdif:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 5093000.spdif_plat -> ../../../../devices/platform/soc@3000000/5093000.spdif_plat
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sunxi-sram:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sunxi-thermal:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 5070400.thermal-sensor -> ../../../../devices/platform/soc@3000000/5070400.thermal-sensor
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sunxi-wdt:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 30090a0.watchdog -> ../../../../devices/platform/soc@3000000/30090a0.watchdog
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sunxi_irq_nmi:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 7010320.interrupt-controller -> ../../../../devices/platform/soc@3000000/7010320.interrupt-controller
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sunxi_pwm:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 300a000.pwm -> ../../../../devices/platform/soc@3000000/300a000.pwm
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/sunxi_usb_udc:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 5100000.udc-controller -> ../../../../devices/platform/soc@3000000/5100000.udc-controller
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/syscon:
+total 0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/tv:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 6520000.tv0 -> ../../../../devices/platform/soc@3000000/6520000.tv0
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/twi:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 7081400.twi -> ../../../../devices/platform/soc@3000000/7081400.twi
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/bus/platform/drivers/uart:
+total 0
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 5000000.uart -> ../../../../devices/platform/soc@3000000/5000000.uart
+lrwxrwxrwx 1 root root    0 2026-11-12 22:04 5000400.uart -> ../../../../devices/platform/soc@3000000/5000400.uart
+--w------- 1 root root 4096 2026-11-12 22:04 bind
+--w------- 1 root root 4096 2026-11-12 22:04 uevent
+--w------- 1 root root 4096 2026-11-12 22:04 unbind
+
+/sys/class/bluetooth:
+total 0

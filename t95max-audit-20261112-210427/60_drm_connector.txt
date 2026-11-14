@@ -1,0 +1,11 @@
+===== 60_drm_connector =====
+Command: for d in /sys/class/drm/*; do echo ==== $d ====; for f in status enabled modes; do echo --- $f; cat $d/$f 2>/dev/null; done; done
+
+==== /sys/class/drm/ttm ====
+--- status
+--- enabled
+--- modes
+==== /sys/class/drm/version ====
+--- status
+--- enabled
+--- modes

@@ -1,0 +1,18 @@
+===== 66_audio_cards =====
+Command: cat /proc/asound/cards /proc/asound/pcm 2>/dev/null
+
+ 0 [audiocodec     ]: audiocodec - audiocodec
+                      audiocodec
+ 1 [sndspdif       ]: sndspdif - sndspdif
+                      sndspdif
+ 2 [ahubdam        ]: ahubdam - ahubdam
+                      ahubdam
+ 3 [ahubhdmi       ]: ahubhdmi - ahubhdmi
+                      ahubhdmi
+ 4 [ahubi2s2       ]: ahubi2s2 - ahubi2s2
+                      ahubi2s2
+00-00: soc@3000000:codec_plat-5096000.codec 5096000.codec-0 :  : playback 1
+01-00: 5093000.spdif_plat-snd-soc-dummy-dai snd-soc-dummy-dai-0 :  : playback 1 : capture 1
+02-00: 5097000.ahub_dam_plat-snd-soc-dummy-dai snd-soc-dummy-dai-0 : 
+03-00: ahub_plat-snd-soc-dummy-dai snd-soc-dummy-dai-0 :  : playback 1 : capture 1
+04-00: ahub_plat-snd-soc-dummy-dai snd-soc-dummy-dai-0 :  : playback 1 : capture 1

@@ -1,0 +1,4 @@
+===== 35_ethtool =====
+Command: if command -v ethtool >/dev/null 2>&1; then for n in /sys/class/net/*; do n=${n##*/}; echo ==== $n ====; ethtool -i $n; ethtool $n; ethtool -T $n; done; else echo ETHTOOL_NOT_INSTALLED; fi
+
+ETHTOOL_NOT_INSTALLED
