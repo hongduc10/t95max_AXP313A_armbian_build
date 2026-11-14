@@ -1,5 +1,7 @@
 # Build outputs & archives
 *.img
+*.img.sha
+*.img.xz.sha
 *.img.xz
 *.img.gz
 *.deb
